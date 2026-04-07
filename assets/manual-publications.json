@@ -21,7 +21,22 @@
     "url": "",
     "featured": false,
     "tags": [
+      "brain activity",
+      "EEG",
       "affective computing"
+    ]
+  },
+  {
+    "title": "Can LLMs Obfuscate Code? A Systematic Analysis of Large Language Models into Assembly Code Obfuscation",
+    "authors": "Mohseni, S., Mohammadi, S., Tilwani, D., Saxena, Y., Ndawula, G. K., Vema, S., Raff, E., Gaur, M.",
+    "venue": "AAAI 2025 Main Conference",
+    "year": 2025,
+    "status": "published",
+    "url": "https://arxiv.org/abs/2412.16135",
+    "featured": false,
+    "tags": [
+      "LLM evaluation",
+      "code obfuscation"
     ]
   },
   {

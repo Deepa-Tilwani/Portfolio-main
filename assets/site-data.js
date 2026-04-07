@@ -117,6 +117,25 @@ window.PORTFOLIO_DATA = {
       "summary": "Review of The Spike: An Epic Journey Through The Brain in 2.1 Seconds by Mark Humphries, presented by Deepa Tilwani."
     }
   ],
+  "news": [
+    {
+      "title": "Deepa Tilwani: Pioneering AI to transform autism diagnosis",
+      "source": "Molinaroli College of Engineering and Computing, University of South Carolina",
+      "date": "2024-06-20",
+      "url": "https://sc.edu/study/colleges_schools/engineering_and_computing/news_events/news/2024/student_feature_deepa_tilwani.php",
+      "summary": "Feature story highlighting Deepa Tilwani's research on AI, neuroscience, and early autism diagnosis."
+    }
+  ],
+  "blogs": [
+    {
+      "title": "Incredible experience at AAAI2025!",
+      "date": "2025-03-20",
+      "url": "https://www.linkedin.com/posts/deepa-tilwani-b758551a0_aaai2025-ai-machinelearning-activity-7308882723559858176-M3SH/",
+      "summary": "Thrilled to have delivered a tutorial and co-authored a paper accepted to the AAAI 2025 main conference with Seyedreza, Ali Mohammadi, and collaborators. A highlight of the event was meeting Andrew Ng and connecting with researchers across AI and machine learning.",
+      "source": "LinkedIn",
+      "cta_label": "Open Post"
+    }
+  ],
   "awards": [
     {
       "year": 2025,
@@ -200,6 +219,7 @@ window.PORTFOLIO_DATA = {
       "tags": [
         "brain activity",
         "EEG",
+        "Infrence",
         "DCM"
       ]
     },
@@ -240,6 +260,19 @@ window.PORTFOLIO_DATA = {
       "tags": [
         "LLM evaluation",
         "citation grounding"
+      ]
+    },
+    {
+      "title": "Can LLMs Obfuscate Code? A Systematic Analysis of Large Language Models into Assembly Code Obfuscation",
+      "authors": "Mohseni, S., Mohammadi, S., Tilwani, D., Saxena, Y., Ndawula, G. K., Vema, S., Raff, E., Gaur, M.",
+      "venue": "AAAI 2025 Main Conference",
+      "year": 2025,
+      "status": "published",
+      "url": "https://arxiv.org/abs/2412.16135",
+      "featured": false,
+      "tags": [
+        "LLM evaluation",
+        "code obfuscation"
       ]
     },
     {
@@ -293,6 +326,8 @@ window.PORTFOLIO_DATA = {
       "url": "",
       "featured": false,
       "tags": [
+        "brain activity",
+        "EEG",
         "affective computing"
       ]
     },
@@ -349,6 +384,7 @@ window.PORTFOLIO_DATA = {
       "tags": [
         "brain activity",
         "EEG",
+        "Infrence",
         "DCM"
       ]
     },

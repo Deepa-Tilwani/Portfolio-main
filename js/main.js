@@ -98,6 +98,29 @@
     } catch (error) {
       console.warn('Falling back to bundled site data.', error);
     }
+
+    try {
+      DATA.news = await loadJson('assets/news.json');
+    } catch (error) {
+      console.warn('Falling back to bundled news data.', error);
+    }
+
+    try {
+      DATA.blogs = await loadJson('assets/blogs.json');
+    } catch (error) {
+      console.warn('Falling back to bundled blog data.', error);
+    }
+  }
+
+  function formatDisplayDate(value) {
+    if (!value) return '';
+    const date = new Date(`${value}T00:00:00`);
+    if (Number.isNaN(date.getTime())) return String(value);
+    return date.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
   }
 
   function pubCard(pub, featured=false) {
@@ -287,6 +310,44 @@
             <p class="mb-0 text-secondary">${esc(item.detail || '')}</p>
           </div>
         </article>`).join('');
+    }
+
+    const news = qs('#home-news');
+    if (news) {
+      news.innerHTML = (DATA.news || []).map(item => `
+        <article class="news-item">
+          <div class="news-meta">${esc(item.source || 'News')} · ${esc(formatDisplayDate(item.date))}</div>
+          <h5 class="mb-2"><a href="${esc(item.url || '#')}" target="_blank" rel="noopener">${esc(item.title || '')}</a></h5>
+          <p class="mb-0 text-secondary">${esc(item.summary || '')}</p>
+        </article>
+      `).join('');
+    }
+
+    const blogs = qs('#home-blogs');
+    if (blogs) {
+      const items = DATA.blogs || [];
+      if (!items.length) {
+        blogs.innerHTML = `
+          <div class="coming-soon-card">
+            <div class="coming-soon-label">Coming up</div>
+            <p class="mb-0 text-secondary">Blog posts are coming soon.</p>
+          </div>
+        `;
+      } else {
+        blogs.innerHTML = items.map(item => `
+          <article class="blog-card">
+            ${item.image ? `<div class="blog-image-wrap"><img src="${esc(item.image)}" alt="${esc(item.image_alt || item.title || 'Blog image')}" class="blog-image"></div>` : ''}
+            <div class="blog-card-body">
+              <div class="news-meta">${esc(item.source || 'Blog')} · ${esc(formatDisplayDate(item.date))}</div>
+              <h3 class="blog-title">${esc(item.title || '')}</h3>
+              <p class="text-secondary mb-0">${esc(item.summary || '')}</p>
+              <div class="blog-actions">
+                <a class="btn btn-outline-accent" href="${esc(item.url || '#')}" target="_blank" rel="noopener">${esc(item.cta_label || 'Read more')}</a>
+              </div>
+            </div>
+          </article>
+        `).join('');
+      }
     }
   }
 
