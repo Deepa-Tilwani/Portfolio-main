@@ -255,6 +255,20 @@ window.PORTFOLIO_DATA = {
       ]
     },
     {
+      "title": "Neurosymbolic AI for Legal AI-TRISM: Trustworthy, Reliable, Interpretable, Safe Models",
+      "authors": "Tilwani, D., Saxena, Y., Padia, A., Parthasarathy, S., Gaur, M.",
+      "venue": "In Neurosymbolic AI",
+      "year": 2026,
+      "status": "published",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/9781394302406.ch14",
+      "featured": false,
+      "tags": [
+        "book chapter",
+        "Neurosymbolic AI",
+        "Legal AI"
+      ]
+    },
+    {
       "title": "Neurosymbolic AI for EGI: Explainable, Grounded, and Instructable Generations",
       "authors": "Gaur, Tilwani, Raff, Azimi, Chadha",
       "venue": "AAAI 2025 Tutorial",
@@ -269,7 +283,7 @@ window.PORTFOLIO_DATA = {
     },
     {
       "title": "Evaluating Large Language Models as Substitutes for Human Affective Ratings in Naturalistic Paradigms",
-      "authors": "Tilwani, O'Reilly, Shinkareva",
+      "authors": "Yang, X., Tilwani, D., O'Reilly, C., Shinkareva, S.",
       "venue": "Under review in IEEE Transactions on Affective Computing",
       "year": 2024,
       "status": "under review",
