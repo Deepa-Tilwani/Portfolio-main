@@ -151,12 +151,12 @@ window.PORTFOLIO_DATA = {
     {
       "year": 2020,
       "title": "2nd Prize",
-      "detail": "LINZ Ars Festival - BR41N.IO Hackathon"
+      "detail": "($100), LINZ Ars Festival - BR41N.IO Hackathon"
     },
     {
       "year": 2020,
       "title": "2nd Prize",
-      "detail": "BR41N.IO: Brain-Computer Interface Designers Hackathon"
+      "detail": "($300), BR41N.IO: Brain-Computer Interface Designers Hackathon"
     },
     {
       "year": 2016,
@@ -181,12 +181,12 @@ window.PORTFOLIO_DATA = {
       "venue": "Frontiers in Neuroimaging",
       "year": 2025,
       "status": "published",
-      "url": "",
+      "url": "https://www.frontiersin.org/journals/neuroimaging/articles/10.3389/fnimg.2025.1573816/full",
       "featured": true,
       "tags": [
         "neuroimaging",
         "brain dynamics",
-        "DCM"
+        "MRI"
       ]
     },
     {
@@ -195,10 +195,11 @@ window.PORTFOLIO_DATA = {
       "venue": "Advances in Signal Processing and Artificial Intelligence",
       "year": 2025,
       "status": "published",
-      "url": "",
+      "url": "https://arxiv.org/abs/2406.05002",
       "featured": true,
       "tags": [
         "brain activity",
+        "EEG",
         "DCM"
       ]
     },
@@ -208,11 +209,11 @@ window.PORTFOLIO_DATA = {
       "venue": "IEEE Journal of Biomedical and Health Informatics",
       "year": 2024,
       "status": "published",
-      "url": "",
+      "url": "http://pubmed.ncbi.nlm.nih.gov/39418143/",
       "featured": true,
       "tags": [
-        "explainability",
-        "health AI"
+        "healthcare",
+        "explainability"
       ]
     },
     {
@@ -221,7 +222,7 @@ window.PORTFOLIO_DATA = {
       "venue": "IEEE Intelligent Systems",
       "year": 2024,
       "status": "published",
-      "url": "",
+      "url": "https://arxiv.org/abs/2410.03726",
       "featured": true,
       "tags": [
         "Neurosymbolic AI",
@@ -234,7 +235,7 @@ window.PORTFOLIO_DATA = {
       "venue": "Under review (KDD 2026)",
       "year": 2024,
       "status": "under review",
-      "url": "",
+      "url": "https://arxiv.org/abs/2405.02228v1",
       "featured": true,
       "tags": [
         "LLM evaluation",
@@ -247,9 +248,11 @@ window.PORTFOLIO_DATA = {
       "venue": "Bioengineering",
       "year": 2023,
       "status": "published",
-      "url": "",
+      "url": "https://www.mdpi.com/2306-5354/10/7/827",
       "featured": true,
       "tags": [
+        "signal processing",
+        "ECG",
         "healthcare",
         "interpretability"
       ]
@@ -274,7 +277,7 @@ window.PORTFOLIO_DATA = {
       "venue": "AAAI 2025 Tutorial",
       "year": 2025,
       "status": "tutorial",
-      "url": "",
+      "url": "https://nesy-egi.github.io/",
       "featured": false,
       "tags": [
         "tutorial",
@@ -299,7 +302,7 @@ window.PORTFOLIO_DATA = {
       "venue": "Bioengineering",
       "year": 2023,
       "status": "published",
-      "url": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37370627/",
       "featured": false,
       "tags": [
         "signal processing",
@@ -312,9 +315,10 @@ window.PORTFOLIO_DATA = {
       "venue": "Emerging Trends in Data-Driven Computing and Communications",
       "year": 2021,
       "status": "published",
-      "url": "",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-16-3915-9_29",
       "featured": false,
       "tags": [
+        "healthcare",
         "machine learning"
       ]
     }
@@ -331,7 +335,7 @@ window.PORTFOLIO_DATA = {
       "tags": [
         "neuroimaging",
         "brain dynamics",
-        "DCM"
+        "MRI"
       ]
     },
     {
@@ -340,10 +344,11 @@ window.PORTFOLIO_DATA = {
       "venue": "Advances in Signal Processing and Artificial Intelligence",
       "year": 2025,
       "status": "published",
-      "url": "",
+      "url": "https://arxiv.org/abs/2406.05002",
       "featured": true,
       "tags": [
         "brain activity",
+        "EEG",
         "DCM"
       ]
     },
@@ -353,11 +358,11 @@ window.PORTFOLIO_DATA = {
       "venue": "IEEE Journal of Biomedical and Health Informatics",
       "year": 2024,
       "status": "published",
-      "url": "",
+      "url": "http://pubmed.ncbi.nlm.nih.gov/39418143/",
       "featured": true,
       "tags": [
-        "explainability",
-        "health AI"
+        "healthcare",
+        "explainability"
       ]
     },
     {
@@ -366,7 +371,7 @@ window.PORTFOLIO_DATA = {
       "venue": "IEEE Intelligent Systems",
       "year": 2024,
       "status": "published",
-      "url": "",
+      "url": "https://arxiv.org/abs/2410.03726",
       "featured": true,
       "tags": [
         "Neurosymbolic AI",

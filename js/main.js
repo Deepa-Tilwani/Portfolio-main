@@ -46,6 +46,60 @@
 
   function fmtYear(y) { return y ? String(y) : ''; }
 
+  function dedupePublications(items) {
+    const seen = new Set();
+    return (items || []).filter(pub => {
+      const key = String(pub?.title || '').trim().toLowerCase();
+      if (!key || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }
+
+  function sortFeatured(items) {
+    return [...(items || [])]
+      .filter(item => item && item.featured)
+      .sort((a, b) => {
+        const yearDelta = Number(b.year || 0) - Number(a.year || 0);
+        if (yearDelta !== 0) return yearDelta;
+        return String(a.title || '').localeCompare(String(b.title || ''));
+      })
+      .slice(0, 4);
+  }
+
+  async function loadJson(path) {
+    const response = await fetch(path, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`Failed to load ${path}`);
+    return response.json();
+  }
+
+  async function hydrateDynamicData() {
+    try {
+      const [scholarPubs, manualPubs, awards] = await Promise.all([
+        loadJson('assets/scholar-publications.json'),
+        loadJson('assets/manual-publications.json'),
+        loadJson('assets/awards.json')
+      ]);
+
+      const combinedPublications = dedupePublications([
+        ...(scholarPubs || []),
+        ...(manualPubs || [])
+      ]).sort((a, b) => {
+        const featuredDelta = Number(Boolean(b.featured)) - Number(Boolean(a.featured));
+        if (featuredDelta !== 0) return featuredDelta;
+        const yearDelta = Number(b.year || 0) - Number(a.year || 0);
+        if (yearDelta !== 0) return yearDelta;
+        return String(a.title || '').localeCompare(String(b.title || ''));
+      });
+
+      DATA.publications = combinedPublications;
+      DATA.featured_publications = sortFeatured(combinedPublications);
+      DATA.awards = awards || [];
+    } catch (error) {
+      console.warn('Falling back to bundled site data.', error);
+    }
+  }
+
   function pubCard(pub, featured=false) {
     const tags = (pub.tags || []).map(t => `<span class="badge me-1 mb-1">${esc(t)}</span>`).join('');
     const url = pub.url ? `<a href="${esc(pub.url)}" target="_blank" rel="noopener">${esc(pub.title)}</a>` : esc(pub.title);
@@ -64,6 +118,83 @@
           <div class="mt-auto">${tags}</div>
         </article>
       </div>`;
+  }
+
+  function publicationTopic(pub) {
+    const tags = Array.isArray(pub.tags) ? pub.tags.filter(Boolean) : [];
+    if (!tags.length) return 'Other';
+    const nonGeneric = tags.find(tag => !['book chapter', 'tutorial'].includes(String(tag).toLowerCase()));
+    return nonGeneric || tags[0];
+  }
+
+  function sortPublications(items) {
+    return [...items].sort((a, b) => {
+      const yearDelta = Number(b.year || 0) - Number(a.year || 0);
+      if (yearDelta !== 0) return yearDelta;
+      return String(a.title || '').localeCompare(String(b.title || ''));
+    });
+  }
+
+  function topicOrderName(topic) {
+    return String(topic || '').toLowerCase();
+  }
+
+  function formatTopicLabel(topic) {
+    return String(topic || '')
+      .split(/\s+/)
+      .filter(Boolean)
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  }
+
+  function topicSlug(topic) {
+    return String(topic || 'other')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '') || 'other';
+  }
+
+  function pubListItem(pub) {
+    const title = pub.url
+      ? `<a href="${esc(pub.url)}" target="_blank" rel="noopener">${esc(pub.title)}</a>`
+      : esc(pub.title);
+    const venueBits = [pub.venue || '', fmtYear(pub.year)].filter(Boolean);
+    const tags = (pub.tags || [])
+      .filter(tag => String(tag) !== publicationTopic(pub))
+      .map(tag => `<span class="publication-tag">${esc(tag)}</span>`)
+      .join('');
+
+    return `
+      <li class="publication-list-item">
+        <div class="publication-citation">
+          <div class="publication-title">${title}</div>
+          <div class="publication-authors">${esc(pub.authors || '')}</div>
+          ${venueBits.length ? `<div class="publication-meta">${esc(venueBits.join(' · '))}</div>` : ''}
+        </div>
+        ${tags ? `<div class="publication-tag-row">${tags}</div>` : ''}
+      </li>`;
+  }
+
+  function groupedPublicationList(publications) {
+    const groups = new Map();
+    sortPublications(publications).forEach(pub => {
+      const topic = publicationTopic(pub);
+      if (!groups.has(topic)) groups.set(topic, []);
+      groups.get(topic).push(pub);
+    });
+
+    const orderedTopics = [...groups.keys()].sort((a, b) => topicOrderName(a).localeCompare(topicOrderName(b)));
+
+    return orderedTopics.map(topic => `
+      <section class="publication-topic-group" data-topic="${esc(topicSlug(topic))}">
+        <div class="publication-topic-header">
+          <h3>${esc(formatTopicLabel(topic))}</h3>
+        </div>
+        <ul class="publication-list">
+          ${groups.get(topic).map(pubListItem).join('')}
+        </ul>
+      </section>
+    `).join('');
   }
 
   function talkCard(talk) {
@@ -225,16 +356,12 @@
     const feat = qs('#featured-list');
     if (feat) feat.innerHTML = featured.map(p => pubCard(p, true)).join('');
     const allEl = qs('#all-publications');
-    if (allEl) allEl.innerHTML = all.map(p => pubCard(p, false)).join('');
+    if (allEl) allEl.innerHTML = groupedPublicationList(all);
     const talks = qs('#talks-grid');
     if (talks) talks.innerHTML = (DATA.talks || []).map(talkCard).join('');
   }
 
   function renderCV() {
-    setText('#cv-publication-count', (DATA.publications || []).length);
-    setText('#cv-award-count', (DATA.awards || []).length);
-    setText('#cv-talk-count', (DATA.talks || []).length);
-
     const edu = qs('#cv-education');
     if (edu) edu.innerHTML = (DATA.education || []).map(item => `
       <div class="timeline-item">
@@ -258,20 +385,6 @@
           ${listItems((item.bullets || []).map(esc))}
         </div>
       </div>`).join('');
-
-    const pubs = qs('#cv-publications');
-    if (pubs) pubs.innerHTML = (DATA.publications || []).map(p => `
-      <li class="mb-3">
-        <strong>${esc(p.title)}</strong><br>
-        <span class="text-secondary">${esc(p.venue)} · ${fmtYear(p.year)}</span>
-      </li>`).join('');
-
-    const awards = qs('#cv-awards');
-    if (awards) awards.innerHTML = (DATA.awards || []).map(a => `
-      <li class="mb-3">
-        <strong>${esc(a.year)}</strong> — ${esc(a.title)}<br>
-        <span class="text-secondary">${esc(a.detail)}</span>
-      </li>`).join('');
 
     const teaching = qs('#cv-teaching');
     if (teaching) teaching.innerHTML = listItems((DATA.teaching || []).map(esc));
@@ -328,7 +441,8 @@
     qsa('[data-profile-image]').forEach(el => el.setAttribute('src', cfg.profile_image || 'images/profile.png'));
   }
 
-  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', async () => {
+    await hydrateDynamicData();
     year();
     themeToggle();
     renderGlobalBits();

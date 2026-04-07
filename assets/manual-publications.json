@@ -5,7 +5,7 @@
     "venue": "Under review (KDD 2026)",
     "year": 2024,
     "status": "under review",
-    "url": "",
+    "url": "https://arxiv.org/abs/2405.02228v1",
     "featured": true,
     "tags": [
       "LLM evaluation",
@@ -44,7 +44,7 @@
     "venue": "AAAI 2025 Tutorial",
     "year": 2025,
     "status": "tutorial",
-    "url": "",
+    "url": "https://nesy-egi.github.io/",
     "featured": false,
     "tags": [
       "tutorial",
