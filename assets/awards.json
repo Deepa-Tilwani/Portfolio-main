@@ -1,0 +1,57 @@
+[
+  {
+    "year": 2025,
+    "title": "University Travel Award",
+    "detail": "$500 for attendance at ASPAI 2025"
+  },
+  {
+    "year": 2025,
+    "title": "AAAI-25 Student Scholarship Award",
+    "detail": "$1000"
+  },
+  {
+    "year": 2024,
+    "title": "EMNLP Diversity and Inclusion Award",
+    "detail": "$1000"
+  },
+  {
+    "year": 2023,
+    "title": "Trainee Best Research Presentation Winner",
+    "detail": "$100, SCAND Symposium"
+  },
+  {
+    "year": 2023,
+    "title": "Research Symposium Third Place Poster Award",
+    "detail": "$200, University of South Carolina"
+  },
+  {
+    "year": 2021,
+    "title": "Nirmala and Jashwantlal Clerk Memorial Scholarship",
+    "detail": "$15000, AIISC"
+  },
+  {
+    "year": 2020,
+    "title": "2nd Prize",
+    "detail": "LINZ Ars Festival - BR41N.IO Hackathon"
+  },
+  {
+    "year": 2020,
+    "title": "2nd Prize",
+    "detail": "BR41N.IO: Brain-Computer Interface Designers Hackathon"
+  },
+  {
+    "year": 2016,
+    "title": "1st Place",
+    "detail": "Poster Presentation on AR and VR Technology, GWECA"
+  },
+  {
+    "year": 2015,
+    "title": "3rd Place",
+    "detail": "Coding Challenge: Toast to Code - C Language, GWECA"
+  },
+  {
+    "year": 2012,
+    "title": "Silver Prize",
+    "detail": "National Science Olympiad (NSO)"
+  }
+]

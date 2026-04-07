@@ -1,0 +1,93 @@
+[
+  {
+    "title": "Benchmarking machine learning models in lesion-symptom mapping for predicting language outcomes in stroke survivors",
+    "authors": "Tilwani et al.",
+    "venue": "Frontiers in Neuroimaging",
+    "year": 2025,
+    "status": "published",
+    "url": "",
+    "featured": true,
+    "tags": [
+      "neuroimaging",
+      "brain dynamics",
+      "DCM"
+    ]
+  },
+  {
+    "title": "A Cross Attention Approach to Diagnostic Explainability Using Clinical Practice Guidelines for Depression",
+    "authors": "Dalal, Tilwani et al.",
+    "venue": "IEEE Journal of Biomedical and Health Informatics",
+    "year": 2024,
+    "status": "published",
+    "url": "",
+    "featured": true,
+    "tags": [
+      "explainability",
+      "health AI"
+    ]
+  },
+  {
+    "title": "Neurosymbolic AI Approach to Attribution in Large Language Models",
+    "authors": "Tilwani, Venkataramanan, Sheth",
+    "venue": "IEEE Intelligent Systems",
+    "year": 2024,
+    "status": "published",
+    "url": "",
+    "featured": true,
+    "tags": [
+      "Neurosymbolic AI",
+      "LLM attribution"
+    ]
+  },
+  {
+    "title": "ECG Recordings as Predictors of Very Early Autism Likelihood: A Machine Learning Approach",
+    "authors": "Tilwani et al.",
+    "venue": "Bioengineering",
+    "year": 2023,
+    "status": "published",
+    "url": "",
+    "featured": true,
+    "tags": [
+      "healthcare",
+      "interpretability"
+    ]
+  },
+  {
+    "title": "Model-Driven Analysis of ECG Using Reinforcement Learning",
+    "authors": "O'Reilly, Oruganti, Tilwani, Bradshaw",
+    "venue": "Bioengineering",
+    "year": 2023,
+    "status": "published",
+    "url": "",
+    "featured": false,
+    "tags": [
+      "signal processing",
+      "ECG"
+    ]
+  },
+  {
+    "title": "Deep Jansen-Rit Parameter Inference for Model-driven Analysis of Brain Activity",
+    "authors": "Tilwani, O'Reilly",
+    "venue": "Advances in Signal Processing and Artificial Intelligence",
+    "year": 2025,
+    "status": "published",
+    "url": "",
+    "featured": true,
+    "tags": [
+      "brain activity",
+      "DCM"
+    ]
+  },
+  {
+    "title": "A Comparative Study and Tool to Early Predict Diabetes Using Machine and Deep Learning Techniques",
+    "authors": "Porwal, Patel, Tilwani, Bansal",
+    "venue": "Emerging Trends in Data-Driven Computing and Communications",
+    "year": 2021,
+    "status": "published",
+    "url": "",
+    "featured": false,
+    "tags": [
+      "machine learning"
+    ]
+  }
+]

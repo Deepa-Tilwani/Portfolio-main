@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CV | Deepa Tilwani</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/research.css" />
+<script src="assets/site-data.js"></script>
+</head>
+<body data-page="cv">
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html" data-site-name>Deepa Tilwani</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link " href="research.html">Research</a></li>
+        <li class="nav-item"><a class="nav-link " href="publications.html">Publications</a></li>
+        <li class="nav-item"><a class="nav-link " href="experience.html">Experience</a></li>
+        <li class="nav-item"><a class="nav-link active" href="cv.html">CV</a></li>
+        <li class="nav-item"><a class="nav-link " href="materials.html">Materials</a></li>
+        <li class="nav-item"><a class="nav-link " href="talks.html">Talks</a></li>
+        <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
+        <li class="nav-item d-flex align-items-center ms-lg-2"><button id="darkModeToggle" class="btn btn-outline-accent btn-sm" type="button" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="page-header">
+  <div class="container text-center">
+    <h1 class="display-5 fw-bold mb-3">Curriculum Vitae</h1>
+    <p class="lead">A web CV that updates with the publication feed and keeps the rest of the profile in one place.</p>
+    <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
+      <a class="btn btn-accent" href="assets/Deepa_Tilwani_Resume.pdf" download>Download PDF</a>
+      <a class="btn btn-outline-accent" data-scholar-link target="_blank" rel="noopener">Google Scholar</a>
+      <a class="btn btn-outline-accent" data-linkedin-link target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<section class="py-4 bg-alternate">
+  <div class="container">
+    <div class="row g-3 text-center">
+      <div class="col-md-4"><div class="counter-card"><div class="counter" id="cv-publication-count" data-target="10">0</div><p class="mb-0 text-secondary">Publications</p></div></div>
+      <div class="col-md-4"><div class="counter-card"><div class="counter" id="cv-award-count" data-target="11">0</div><p class="mb-0 text-secondary">Awards</p></div></div>
+      <div class="col-md-4"><div class="counter-card"><div class="counter" id="cv-talk-count" data-target="1">0</div><p class="mb-0 text-secondary">Talks</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <h2 class="section-title">Education</h2>
+        <div id="cv-education" class="timeline mb-5"></div>
+
+        <h2 class="section-title">Experience</h2>
+        <div id="cv-experience" class="timeline mb-5"></div>
+
+        <h2 class="section-title">Selected publications</h2>
+        <ul id="cv-publications" class="list-unstyled mb-5"></ul>
+
+        <h2 class="section-title">Awards</h2>
+        <ul id="cv-awards" class="list-unstyled mb-5"></ul>
+      </div>
+      <div class="col-lg-4">
+        <article class="card-lite p-4 mb-4">
+          <h5 class="mb-3">Research profile</h5>
+          <p class="text-secondary mb-0">Deepa Tilwani is a PhD researcher at USC working on computational neuroscience, AI, machine learning, deep learning, healthcare AI, and trustworthy LLMs.</p>
+        </article>
+        <article class="card-lite p-4 mb-4">
+          <h5 class="mb-3">Teaching</h5>
+          <div id="cv-teaching"></div>
+        </article>
+        <article class="card-lite p-4 mb-4">
+          <h5 class="mb-3">Mentoring</h5>
+          <div id="cv-mentoring"></div>
+        </article>
+        <article class="card-lite p-4">
+          <h5 class="mb-3">Service</h5>
+          <div id="cv-service"></div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div id="scrollTopBtn" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></div>
+<footer class="py-4 border-top">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+    <small>&copy; <span id="year"></span> <span data-site-name>Deepa Tilwani</span>. All rights reserved.</small>
+    <small class="footer-note">Research, publications, and experience · <span data-site-tagline>PhD researcher in neuroscience, AI, machine learning, deep learning, and trustworthy LLMs.</span></small>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

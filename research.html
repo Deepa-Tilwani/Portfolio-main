@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Research | Deepa Tilwani</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/research.css" />
+<script src="assets/site-data.js"></script>
+</head>
+<body data-page="research">
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html" data-site-name>Deepa Tilwani</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="research.html">Research</a></li>
+        <li class="nav-item"><a class="nav-link " href="publications.html">Publications</a></li>
+        <li class="nav-item"><a class="nav-link " href="experience.html">Experience</a></li>
+        <li class="nav-item"><a class="nav-link " href="cv.html">CV</a></li>
+        <li class="nav-item"><a class="nav-link " href="materials.html">Materials</a></li>
+        <li class="nav-item"><a class="nav-link " href="talks.html">Talks</a></li>
+        <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
+        <li class="nav-item d-flex align-items-center ms-lg-2"><button id="darkModeToggle" class="btn btn-outline-accent btn-sm" type="button" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="page-header">
+  <div class="container text-center">
+    <h1 class="display-5 fw-bold mb-3">Research</h1>
+    <p class="lead">A focused research profile centered on computational neuroscience, healthcare AI, neurosymbolic methods, and trustworthy language systems.</p>
+  </div>
+</section>
+
+<section class="py-4 bg-alternate">
+  <div class="container">
+    <div id="research-cards" class="row g-4"></div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-7">
+        <h2 class="section-title">Selected projects</h2>
+        <div id="selected-projects" class="row g-4"></div>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="section-title">Methods and data</h2>
+        <article class="card-lite p-4 mb-4">
+          <p class="mb-0 text-secondary">EEG, MRI, ECG, retrieval-augmented generation, and citation grounding are the main technical threads across this work.</p>
+        </article>
+        <article class="card-lite p-4">
+          <p class="mb-0 text-secondary">The dissertation direction centers on neural mass models of brain dynamics, including Jansen-Rit and related models, for inversion, effective connectivity, and statistical analysis.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-alternate">
+  <div class="container">
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-7">
+        <h2 class="section-title">Research roles</h2>
+        <div id="research-experience-highlights" class="row g-4"></div>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="section-title">Teaching and mentoring</h2>
+        <article class="card-lite p-4 mb-4">
+          <h5 class="mb-3">Teaching</h5>
+          <div id="research-teaching"></div>
+        </article>
+        <article class="card-lite p-4">
+          <h5 class="mb-3">Mentoring</h5>
+          <div id="research-mentoring"></div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div id="scrollTopBtn" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></div>
+<footer class="py-4 border-top">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+    <small>&copy; <span id="year"></span> <span data-site-name>Deepa Tilwani</span>. All rights reserved.</small>
+    <small class="footer-note">Research, publications, and experience · <span data-site-tagline>PhD researcher in neuroscience, AI, machine learning, deep learning, and trustworthy LLMs.</span></small>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

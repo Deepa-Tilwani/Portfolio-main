@@ -1,0 +1,40 @@
+[
+  {
+    "title": "REASONS: A benchmark for Retrieval and Automated citationS Of scieNtific Sentences using Public and Proprietary LLMs",
+    "authors": "Tilwani et al.",
+    "venue": "Under review (KDD 2026)",
+    "year": 2024,
+    "status": "under review",
+    "url": "",
+    "featured": true,
+    "tags": [
+      "LLM evaluation",
+      "citation grounding"
+    ]
+  },
+  {
+    "title": "Evaluating Large Language Models as Substitutes for Human Affective Ratings in Naturalistic Paradigms",
+    "authors": "Tilwani, O'Reilly, Shinkareva",
+    "venue": "Under review in IEEE Transactions on Affective Computing",
+    "year": 2024,
+    "status": "under review",
+    "url": "",
+    "featured": false,
+    "tags": [
+      "affective computing"
+    ]
+  },
+  {
+    "title": "Neurosymbolic AI for EGI: Explainable, Grounded, and Instructable Generations",
+    "authors": "Gaur, Tilwani, Raff, Azimi, Chadha",
+    "venue": "AAAI 2025 Tutorial",
+    "year": 2025,
+    "status": "tutorial",
+    "url": "",
+    "featured": false,
+    "tags": [
+      "tutorial",
+      "Neurosymbolic AI"
+    ]
+  }
+]
