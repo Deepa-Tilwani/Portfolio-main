@@ -1,8 +1,8 @@
 window.PORTFOLIO_DATA = {
   "config": {
     "name": "Deepa Tilwani",
-    "tagline": "PhD researcher in neuroscience, bioinformatics, AI, machine learning, deep learning, and trustworthy LLMs.",
-    "description": "Deepa Tilwani is a PhD researcher at the Artificial Intelligence Institute, University of South Carolina, working on computational neuroscience, bioinformatics, generative brain models, AI, machine learning, deep learning, healthcare AI, and trustworthy LLMs.",
+    "tagline": "PhD researcher in neuroscience, AI, machine learning, deep learning, and trustworthy LLMs.",
+    "description": "Deepa Tilwani is a PhD researcher at the Artificial Intelligence Institute, University of South Carolina, working on computational neuroscience, generative brain models, AI, machine learning, deep learning, healthcare AI, and trustworthy LLMs.",
     "resume_pdf": "assets/Deepa_Tilwani_Resume.pdf",
     "scholar_profile_url": "https://scholar.google.com/citations?user=jpS1zA4AAAAJ&hl=en",
     "linkedin_url": "https://www.linkedin.com/in/deepa-tilwani-b758551a0/",
@@ -95,7 +95,7 @@ window.PORTFOLIO_DATA = {
     },
     {
       "title": "AI, Machine Learning, and Deep Learning",
-      "desc": "Machine learning, deep learning, and bioinformatics methods for brain signals, healthcare applications, and data-driven modeling."
+      "desc": "Machine learning and deep learning methods for brain signals, healthcare applications, and data-driven modeling."
     },
     {
       "title": "LLMs and Trustworthy AI",
