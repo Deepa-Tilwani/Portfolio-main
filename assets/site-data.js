@@ -6,6 +6,7 @@ window.PORTFOLIO_DATA = {
     "resume_pdf": "assets/Deepa_Tilwani_Resume.pdf",
     "scholar_profile_url": "https://scholar.google.com/citations?user=jpS1zA4AAAAJ&hl=en",
     "linkedin_url": "https://www.linkedin.com/in/deepa-tilwani-b758551a0/",
+    "github_url": "https://github.com/Deepa-Tilwani",
     "email": "dtilwani@mailbox.sc.edu",
     "phone": "+1 (803) 477-4526",
     "location": "Columbia, SC",
@@ -140,42 +141,42 @@ window.PORTFOLIO_DATA = {
     {
       "year": 2025,
       "title": "University Travel Award",
-      "detail": "$500 for attendance at ASPAI 2025"
+      "detail": "Attendance at ASPAI 2025"
     },
     {
       "year": 2025,
       "title": "AAAI-25 Student Scholarship Award",
-      "detail": "$1000"
+      "detail": ""
     },
     {
       "year": 2024,
       "title": "EMNLP Diversity and Inclusion Award",
-      "detail": "$1000"
+      "detail": ""
     },
     {
       "year": 2023,
       "title": "Trainee Best Research Presentation Winner",
-      "detail": "$100, SCAND Symposium"
+      "detail": "SCAND Symposium"
     },
     {
       "year": 2023,
       "title": "Research Symposium Third Place Poster Award",
-      "detail": "$200, University of South Carolina"
+      "detail": "University of South Carolina"
     },
     {
       "year": 2021,
       "title": "Nirmala and Jashwantlal Clerk Memorial Scholarship",
-      "detail": "$15000, AIISC"
+      "detail": "AIISC"
     },
     {
       "year": 2020,
       "title": "2nd Prize",
-      "detail": "($100), LINZ Ars Festival - BR41N.IO Hackathon"
+      "detail": "LINZ Ars Festival - BR41N.IO Hackathon"
     },
     {
       "year": 2020,
       "title": "2nd Prize",
-      "detail": "($300), BR41N.IO: Brain-Computer Interface Designers Hackathon"
+      "detail": "BR41N.IO: Brain-Computer Interface Designers Hackathon"
     },
     {
       "year": 2016,

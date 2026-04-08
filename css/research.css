@@ -95,10 +95,10 @@ section.bg-alternate { background: var(--bg-alternate) !important; }
 .social-icons a:hover { color: var(--accent-2); }
 
 .card-lite, .publication-card, .focus-card, .counter-card, .timeline-content, .talk-card, .metric-card {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border) !important;
-  border-radius: 22px !important;
-  box-shadow: var(--shadow-sm);
+  background: color-mix(in srgb, var(--card-bg) 72%, transparent);
+  border: 1px solid color-mix(in srgb, var(--card-border) 72%, transparent) !important;
+  border-radius: 18px !important;
+  box-shadow: none;
 }
 
 .focus-card, .publication-card, .talk-card, .metric-card, .counter-card { padding: 1.3rem; }

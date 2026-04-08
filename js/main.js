@@ -302,25 +302,44 @@
 
     const awards = qs('#home-awards');
     if (awards) {
-      awards.innerHTML = (DATA.awards || []).slice(0, 4).map(item => `
-        <article class="award-item">
-          <div class="award-year">${esc(item.year || '')}</div>
-          <div>
-            <h5 class="mb-1">${esc(item.title || '')}</h5>
-            <p class="mb-0 text-secondary">${esc(item.detail || '')}</p>
-          </div>
-        </article>`).join('');
+      const items = DATA.awards || [];
+      const previewCount = 4;
+      awards.innerHTML = `
+        <ul class="award-list" aria-label="Awards and recognition">
+          ${items.map((item, index) => `
+            <li class="award-item ${index >= previewCount ? 'award-item-hidden' : ''}" ${index >= previewCount ? 'data-award-overflow="true"' : ''}>
+              <div class="award-year">${esc(item.year || '')}</div>
+              <div>
+                <h3 class="award-title">${esc(item.title || '')}</h3>
+                <p class="mb-0 text-secondary">${esc(item.detail || '')}</p>
+              </div>
+            </li>`).join('')}
+        </ul>
+        ${items.length > previewCount ? `
+          <button type="button" class="award-toggle-link" data-awards-toggle aria-expanded="false">
+            Read more
+          </button>
+        ` : ''}
+      `;
     }
 
     const news = qs('#home-news');
     if (news) {
-      news.innerHTML = (DATA.news || []).map(item => `
-        <article class="news-item">
-          <div class="news-meta">${esc(item.source || 'News')} · ${esc(formatDisplayDate(item.date))}</div>
-          <h5 class="mb-2"><a href="${esc(item.url || '#')}" target="_blank" rel="noopener">${esc(item.title || '')}</a></h5>
-          <p class="mb-0 text-secondary">${esc(item.summary || '')}</p>
-        </article>
-      `).join('');
+      const items = DATA.news || [];
+      news.innerHTML = items.length ? `
+        <ul class="content-list" aria-label="News appearances">
+          ${items.map(item => `
+            <li class="content-list-item">
+              <div class="news-meta">${esc(item.source || 'News')} · ${esc(formatDisplayDate(item.date))}</div>
+              <h3 class="content-list-title">${esc(item.title || '')}</h3>
+              <p class="content-list-summary text-secondary">${esc(item.summary || '')}</p>
+              <a class="content-list-link" href="${esc(item.url || '#')}" target="_blank" rel="noopener" aria-label="Read article: ${esc(item.title || '')}">Read article</a>
+            </li>
+          `).join('')}
+        </ul>
+      ` : `
+        <p class="text-secondary mb-0">News appearances will be added here.</p>
+      `;
     }
 
     const blogs = qs('#home-blogs');
@@ -328,25 +347,24 @@
       const items = DATA.blogs || [];
       if (!items.length) {
         blogs.innerHTML = `
-          <div class="coming-soon-card">
+          <div class="content-list-empty">
             <div class="coming-soon-label">Coming up</div>
             <p class="mb-0 text-secondary">Blog posts are coming soon.</p>
           </div>
         `;
       } else {
-        blogs.innerHTML = items.map(item => `
-          <article class="blog-card">
-            ${item.image ? `<div class="blog-image-wrap"><img src="${esc(item.image)}" alt="${esc(item.image_alt || item.title || 'Blog image')}" class="blog-image"></div>` : ''}
-            <div class="blog-card-body">
-              <div class="news-meta">${esc(item.source || 'Blog')} · ${esc(formatDisplayDate(item.date))}</div>
-              <h3 class="blog-title">${esc(item.title || '')}</h3>
-              <p class="text-secondary mb-0">${esc(item.summary || '')}</p>
-              <div class="blog-actions">
-                <a class="btn btn-outline-accent" href="${esc(item.url || '#')}" target="_blank" rel="noopener">${esc(item.cta_label || 'Read more')}</a>
-              </div>
-            </div>
-          </article>
-        `).join('');
+        blogs.innerHTML = `
+          <ul class="content-list" aria-label="Blog posts">
+            ${items.map(item => `
+              <li class="content-list-item">
+                <div class="news-meta">${esc(item.source || 'Blog')} · ${esc(formatDisplayDate(item.date))}</div>
+                <h3 class="content-list-title">${esc(item.title || '')}</h3>
+                <p class="content-list-summary text-secondary">${esc(item.summary || '')}</p>
+                <a class="content-list-link" href="${esc(item.url || '#')}" target="_blank" rel="noopener" aria-label="${esc(item.cta_label || 'Open post')}: ${esc(item.title || '')}">${esc(item.cta_label || 'Open post')}</a>
+              </li>
+            `).join('')}
+          </ul>
+        `;
       }
     }
   }
@@ -394,14 +412,12 @@
     const exp = qs('#research-experience-highlights');
     if (exp) {
       exp.innerHTML = (DATA.experience || []).slice(0, 3).map(item => `
-        <div class="col-lg-6">
-          <article class="card-lite h-100 p-4">
-            <div class="small text-secondary text-uppercase mb-2">${esc(item.period || '')}</div>
-            <h5 class="mb-2">${esc(item.title || '')}</h5>
-            <p class="text-secondary mb-2">${esc(item.org || '')}</p>
-            ${listItems((item.bullets || []).slice(0, 3).map(esc), 'signal-list')}
-          </article>
-        </div>`).join('');
+        <article class="organized-item">
+          <div class="small text-secondary text-uppercase mb-2">${esc(item.period || '')}</div>
+          <h5 class="mb-1">${esc(item.title || '')}</h5>
+          <p class="text-secondary mb-3">${esc(item.org || '')}</p>
+          ${listItems((item.bullets || []).slice(0, 3).map(esc), 'signal-list')}
+        </article>`).join('');
     }
 
     const teaching = qs('#research-teaching');
@@ -491,6 +507,20 @@
     setText('#contact-location', cfg.location || '');
   }
 
+  function bindExpandableLists() {
+    qsa('[data-awards-toggle]').forEach(button => {
+      button.addEventListener('click', () => {
+        const container = button.closest('#home-awards');
+        if (!container) return;
+        const overflowItems = qsa('[data-award-overflow="true"]', container);
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        overflowItems.forEach(item => item.classList.toggle('award-item-hidden', expanded));
+        button.setAttribute('aria-expanded', String(!expanded));
+        button.textContent = expanded ? 'Read more' : 'Show less';
+      });
+    });
+  }
+
   function renderGlobalBits() {
     qsa('[data-site-name]').forEach(el => el.textContent = cfg.name || 'Research Portfolio');
     qsa('[data-site-tagline]').forEach(el => el.textContent = cfg.tagline || 'Research portfolio');
@@ -498,6 +528,7 @@
     qsa('[data-resume-link]').forEach(el => el.setAttribute('href', resume));
     qsa('[data-scholar-link]').forEach(el => el.setAttribute('href', cfg.scholar_profile_url || '#'));
     qsa('[data-linkedin-link]').forEach(el => el.setAttribute('href', cfg.linkedin_url || '#'));
+    qsa('[data-github-link]').forEach(el => el.setAttribute('href', cfg.github_url || '#'));
     qsa('[data-email-link]').forEach(el => el.setAttribute('href', `mailto:${cfg.email || ''}`));
     qsa('[data-profile-image]').forEach(el => el.setAttribute('src', cfg.profile_image || 'images/profile.png'));
   }
@@ -515,6 +546,7 @@
     if (page === 'cv') renderCV();
     if (page === 'experience') renderExperience();
     if (page === 'contact') renderContact();
+    bindExpandableLists();
 
     const scrollBtn = qs('#scrollTopBtn');
     if (scrollBtn) {
