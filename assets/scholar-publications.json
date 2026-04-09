@@ -1,98 +1,122 @@
 [
   {
-    "title": "Benchmarking machine learning models in lesion-symptom mapping for predicting language outcomes in stroke survivors",
-    "authors": "Tilwani et al.",
-    "venue": "Frontiers in Neuroimaging",
-    "year": 2025,
-    "status": "published",
-    "url": "https://www.frontiersin.org/journals/neuroimaging/articles/10.3389/fnimg.2025.1573816/full",
-    "featured": true,
-    "tags": [
-      "neuroimaging",
-      "brain dynamics",
-      "MRI"
-    ]
-  },
-  {
-    "title": "A Cross Attention Approach to Diagnostic Explainability Using Clinical Practice Guidelines for Depression",
-    "authors": "Dalal, Tilwani et al.",
-    "venue": "IEEE Journal of Biomedical and Health Informatics",
+    "title": "A cross attention approach to diagnostic explainability using clinical practice guidelines for depression",
+    "authors": "S Dalal, D Tilwani, M Gaur, S Jain, VL Shalin, AP Sheth",
+    "venue": "IEEE Journal of Biomedical and Health Informatics 29 (2), 1333-1342 , 2024",
     "year": 2024,
     "status": "published",
-    "url": "http://pubmed.ncbi.nlm.nih.gov/39418143/",
-    "featured": true,
-    "tags": [
-      "healthcare",
-      "explainability"
-    ]
-  },
-  {
-    "title": "Neurosymbolic AI Approach to Attribution in Large Language Models",
-    "authors": "Tilwani, Venkataramanan, Sheth",
-    "venue": "IEEE Intelligent Systems",
-    "year": 2024,
-    "status": "published",
-    "url": "https://arxiv.org/abs/2410.03726",
-    "featured": true,
-    "tags": [
-      "Neurosymbolic AI",
-      "LLM attribution"
-    ]
-  },
-  {
-    "title": "ECG Recordings as Predictors of Very Early Autism Likelihood: A Machine Learning Approach",
-    "authors": "Tilwani et al.",
-    "venue": "Bioengineering",
-    "year": 2023,
-    "status": "published",
-    "url": "https://www.mdpi.com/2306-5354/10/7/827",
-    "featured": true,
-    "tags": [
-      "signal processing",
-      "ECG",
-      "healthcare",
-      "interpretability"
-    ]
-  },
-  {
-    "title": "Model-Driven Analysis of ECG Using Reinforcement Learning",
-    "authors": "O'Reilly, Oruganti, Tilwani, Bradshaw",
-    "venue": "Bioengineering",
-    "year": 2023,
-    "status": "published",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/37370627/",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:9yKSN-GCB0IC",
     "featured": false,
-    "tags": [
-      "signal processing",
-      "ECG"
-    ]
+    "tags": []
   },
   {
-    "title": "Deep Jansen-Rit Parameter Inference for Model-driven Analysis of Brain Activity",
-    "authors": "Tilwani, O'Reilly",
-    "venue": "Advances in Signal Processing and Artificial Intelligence",
+    "title": "Can llms obfuscate code? a systematic analysis of large language models into assembly code obfuscation",
+    "authors": "S Mohseni, S Mohammadi, D Tilwani, Y Saxena, GK Ndawula, S Vema, ...",
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence 39 (23), 24893 … , 2025",
     "year": 2025,
     "status": "published",
-    "url": "https://arxiv.org/abs/2406.05002",
-    "featured": true,
-    "tags": [
-      "brain activity",
-      "EEG",
-      "Infrence",
-      "DCM"
-    ]
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:W7OEmFMy1HYC",
+    "featured": false,
+    "tags": []
   },
   {
-    "title": "A Comparative Study and Tool to Early Predict Diabetes Using Machine and Deep Learning Techniques",
-    "authors": "Porwal, Patel, Tilwani, Bansal",
-    "venue": "Emerging Trends in Data-Driven Computing and Communications",
+    "title": "Reasons: A benchmark for retrieval and automated citations of scientific sentences using public and proprietary llms",
+    "authors": "D Tilwani, Y Saxena, A Mohammadi, E Raff, A Sheth, S Parthasarathy, ...",
+    "venue": "arXiv e-prints, arXiv: 2405.02228 , 2024",
+    "year": 2024,
+    "status": "published",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:roLk4NBRz8UC",
+    "featured": false,
+    "tags": []
+  },
+  {
+    "title": "Neurosymbolic ai approach to attribution in large language models",
+    "authors": "D Tilwani, R Venkataramanan, AP Sheth",
+    "venue": "IEEE Intelligent Systems 39 (6), 10-17 , 2024",
+    "year": 2024,
+    "status": "published",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:Tyk-4Ss8FVUC",
+    "featured": false,
+    "tags": []
+  },
+  {
+    "title": "ECG recordings as predictors of very early autism likelihood: a machine learning approach",
+    "authors": "D Tilwani, J Bradshaw, A Sheth, C O’Reilly",
+    "venue": "Bioengineering 10 (7), 827 , 2023",
+    "year": 2023,
+    "status": "published",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:d1gkVwhDpl0C",
+    "featured": false,
+    "tags": []
+  },
+  {
+    "title": "Model-driven analysis of ECG using reinforcement learning",
+    "authors": "C O’Reilly, SDR Oruganti, D Tilwani, J Bradshaw",
+    "venue": "Bioengineering 10 (6), 696 , 2023",
+    "year": 2023,
+    "status": "published",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:u-x6o8ySG0sC",
+    "featured": false,
+    "tags": []
+  },
+  {
+    "title": "Attribution in scientific literature: New benchmark and methods",
+    "authors": "Y Saxena, D Tilwani, A Mohammadi, E Raff, A Sheth, S Parthasarathy, ...",
+    "venue": "arXiv preprint arXiv:2405.02228 , 2024",
+    "year": 2024,
+    "status": "published",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:WF5omc3nYNoC",
+    "featured": false,
+    "tags": []
+  },
+  {
+    "title": "Neurosymbolic AI for Legal AI‐TRISM: Trustworthy, Reliable, Interpretable, Safe Models",
+    "authors": "D Tilwani, Y Saxena, A Padia, S Parthasarathy, M Gaur",
+    "venue": "Neurosymbolic AI: Foundations and Applications, 429-454 , 2026",
+    "year": 2026,
+    "status": "published",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:UebtZRa9Y70C",
+    "featured": false,
+    "tags": []
+  },
+  {
+    "title": "Benchmarking machine learning models in lesion-symptom mapping for predicting language outcomes in stroke survivors",
+    "authors": "D Tilwani, C O'Reilly, N Riccardi, VL Shalin, DB den Ouden, J Fridriksson, ...",
+    "venue": "Frontiers in Neuroimaging 4, 1573816 , 2025",
+    "year": 2025,
+    "status": "published",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:UeHWp8X0CEIC",
+    "featured": false,
+    "tags": []
+  },
+  {
+    "title": "KiL 2024: 4th International Workshop on Knowledge-infused Learning (Towards Consistent, Reliable, Explainable, and Safe LLMs)",
+    "authors": "M Gaur, E Tsamoura, E Raff, N Vedula, S Parthasarathy",
+    "venue": "Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and … , 2024",
+    "year": 2024,
+    "status": "published",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:0EnyYjriUFMC",
+    "featured": false,
+    "tags": []
+  },
+  {
+    "title": "Deep Jansen-Rit Parameter Inference for Model-Driven Analysis of Brain Activity",
+    "authors": "D Tilwani, C O'Reilly",
+    "venue": "arXiv preprint arXiv:2406.05002 , 2024",
+    "year": 2024,
+    "status": "published",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:eQOLeE2rZwMC",
+    "featured": false,
+    "tags": []
+  },
+  {
+    "title": "A Comparative Study and Tool to Early Predict Diabetes Using Various Machine and Deep Learning Based Techniques",
+    "authors": "S Porwal, CK Patel, D Tilwani, SK Bansal",
+    "venue": "Emerging Trends in Data Driven Computing and Communications: Proceedings of … , 2021",
     "year": 2021,
     "status": "published",
-    "url": "https://link.springer.com/chapter/10.1007/978-981-16-3915-9_29",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:u5HHmVD_uO8C",
     "featured": false,
-    "tags": [
-      "healthcare",
-      "machine learning"
-    ]
+    "tags": []
   }
 ]

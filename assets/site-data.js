@@ -2,106 +2,21 @@ window.PORTFOLIO_DATA = {
   "config": {
     "name": "Deepa Tilwani",
     "tagline": "PhD researcher in neuroscience, AI, machine learning, deep learning, and trustworthy LLMs.",
-    "description": "Deepa Tilwani is a PhD researcher at the Artificial Intelligence Institute, University of South Carolina, working on computational neuroscience, generative brain models, AI, machine learning, deep learning, healthcare AI, and trustworthy LLMs.",
+    "description": "Deepa Tilwani research website.",
     "resume_pdf": "assets/Deepa_Tilwani_Resume.pdf",
     "scholar_profile_url": "https://scholar.google.com/citations?user=jpS1zA4AAAAJ&hl=en",
     "linkedin_url": "https://www.linkedin.com/in/deepa-tilwani-b758551a0/",
-    "github_url": "https://github.com/Deepa-Tilwani",
-    "email": "dtilwani@mailbox.sc.edu",
-    "phone": "+1 (803) 477-4526",
-    "location": "Columbia, SC",
+    "email": "",
+    "phone": "",
+    "location": "",
     "profile_image": "images/profile.png"
   },
-  "education": [
-    {
-      "period": "2022–Present",
-      "title": "Ph.D. in Computer Science and Engineering",
-      "org": "University of South Carolina, Columbia, SC, USA",
-      "detail": "Focus on computational neuroscience, generative brain models, machine learning, deep learning, statistical analysis, and neurosymbolic AI."
-    },
-    {
-      "period": "2019–2022",
-      "title": "M.Tech in Computer Science and Engineering",
-      "org": "The LNM Institute of Information Technology, Jaipur, Rajasthan, India",
-      "detail": "Thesis: Predicting Familial Likelihood of Autism Spectrum Disorder in Infancy Using ECG."
-    }
-  ],
-  "experience": [
-    {
-      "period": "2022–Present",
-      "title": "Graduate Research Assistant",
-      "org": "Artificial Intelligence Institute, University of South Carolina",
-      "bullets": [
-        "Lead research projects focused on AI, machine learning, large language models, attribution, and search.",
-        "Developed the REASONS benchmark for retrieval and automated citation evaluation.",
-        "Collaborated with multidisciplinary teams on computational neuroscience, neuroimaging, and healthcare AI."
-      ]
-    },
-    {
-      "period": "June 2025–August 2025",
-      "title": "AI Research and Development Intern",
-      "org": "Neural Nest, LLC (Remote)",
-      "bullets": [
-        "Contributed to ARTHEMIS, an AI-driven virtual courtroom platform for arbitration and mediation.",
-        "Developed multi-agent and LLM-based simulation models to improve tribunal dynamics and decision support.",
-        "Supported secure digital courtroom workflows that reduced resolution time significantly."
-      ]
-    },
-    {
-      "period": "2021–2022",
-      "title": "Visiting Research Scholar",
-      "org": "Artificial Intelligence Institute, University of South Carolina",
-      "bullets": [
-        "Worked with a multidisciplinary neuroscience team on EEG and MRI analysis.",
-        "Contributed AI expertise to bridge computational methods and neurocognitive studies."
-      ]
-    },
-    {
-      "period": "2020–2021",
-      "title": "Remote Research Intern",
-      "org": "Artificial Intelligence Institute, University of South Carolina",
-      "bullets": [
-        "Collaborated on experiments connecting ECG signals with machine learning and deep learning methods.",
-        "Assisted in designing studies for very early autism likelihood prediction."
-      ]
-    }
-  ],
-  "teaching": [
-    "Teaching Assistant, SCINBRE Machine Learning in Python Workshop, University of South Carolina (2024).",
-    "Instructor, Introduction to Machine Learning, AIISC High School Summer Camp (2024).",
-    "Instructor, Introduction to Python, AIISC High School Summer Camp (2023).",
-    "Teaching Assistant (2019–2021), The LNM Institute of Information Technology: Computer Networks, Data Structures, DBMS, and Advanced Programming Labs."
-  ],
-  "service": [
-    "Web and Publicity Chair, KG-STAR Workshop, CIKM 2024.",
-    "Coordinator, AIISC Retreat, 2023.",
-    "Session Moderator and Publicity Chair, ACM KDD Workshop on Knowledge-infused Learning, 2023.",
-    "Student Member, AAAI (2022–Present)."
-  ],
-  "mentoring": [
-    "Yash Saxena — project on REASON: Reference and Assertions for Consistent Evaluation of Factual/Non-Factual Sentences.",
-    "Nethra Gunti — project on phase shift analysis in Autism Spectrum Disorder.",
-    "Sai Durga Rithvik Oruganti — project on phase shift analysis in Autism Spectrum Disorder."
-  ],
-  "scholar_metrics": {
-    "citations": 103,
-    "h_index": null,
-    "i10_index": null
-  },
-  "research_areas": [
-    {
-      "title": "Computational Neuroscience",
-      "desc": "Generative models of brain activity for inversion, effective connectivity, and statistical analysis in computational neuroscience."
-    },
-    {
-      "title": "AI, Machine Learning, and Deep Learning",
-      "desc": "Machine learning and deep learning methods for brain signals, healthcare applications, and data-driven modeling."
-    },
-    {
-      "title": "LLMs and Trustworthy AI",
-      "desc": "Large language models, attribution, citation grounding, clinical explainability, and evaluation methods for reliable AI in high-stakes settings."
-    }
-  ],
+  "education": [],
+  "experience": [],
+  "teaching": [],
+  "service": [],
+  "mentoring": [],
+  "research_areas": [],
   "talks": [
     {
       "title": "Book Review: Cognitive Neuroscience by Richard Passingham",
@@ -116,25 +31,6 @@ window.PORTFOLIO_DATA = {
       "youtube": "https://www.youtube.com/watch?v=QCuwQqCEE58&t=9s",
       "slides": "",
       "summary": "Review of The Spike: An Epic Journey Through The Brain in 2.1 Seconds by Mark Humphries, presented by Deepa Tilwani."
-    }
-  ],
-  "news": [
-    {
-      "title": "Deepa Tilwani: Pioneering AI to transform autism diagnosis",
-      "source": "Molinaroli College of Engineering and Computing, University of South Carolina",
-      "date": "2024-06-20",
-      "url": "https://sc.edu/study/colleges_schools/engineering_and_computing/news_events/news/2024/student_feature_deepa_tilwani.php",
-      "summary": "Feature story highlighting Deepa Tilwani's research on AI, neuroscience, and early autism diagnosis."
-    }
-  ],
-  "blogs": [
-    {
-      "title": "Incredible experience at AAAI2025!",
-      "date": "2025-03-20",
-      "url": "https://www.linkedin.com/posts/deepa-tilwani-b758551a0_aaai2025-ai-machinelearning-activity-7308882723559858176-M3SH/",
-      "summary": "Thrilled to have delivered a tutorial and co-authored a paper accepted to the AAAI 2025 main conference with Seyedreza, Ali Mohammadi, and collaborators. A highlight of the event was meeting Andrew Ng and connecting with researchers across AI and machine learning.",
-      "source": "LinkedIn",
-      "cta_label": "Open Post"
     }
   ],
   "awards": [
@@ -194,103 +90,12 @@ window.PORTFOLIO_DATA = {
       "detail": "National Science Olympiad (NSO)"
     }
   ],
+  "scholar_metrics": {
+    "citations": 103,
+    "h_index": 6,
+    "i10_index": 6
+  },
   "publications": [
-    {
-      "title": "Benchmarking machine learning models in lesion-symptom mapping for predicting language outcomes in stroke survivors",
-      "authors": "Tilwani et al.",
-      "venue": "Frontiers in Neuroimaging",
-      "year": 2025,
-      "status": "published",
-      "url": "https://www.frontiersin.org/journals/neuroimaging/articles/10.3389/fnimg.2025.1573816/full",
-      "featured": true,
-      "tags": [
-        "neuroimaging",
-        "brain dynamics",
-        "MRI"
-      ]
-    },
-    {
-      "title": "Deep Jansen-Rit Parameter Inference for Model-driven Analysis of Brain Activity",
-      "authors": "Tilwani, O'Reilly",
-      "venue": "Advances in Signal Processing and Artificial Intelligence",
-      "year": 2025,
-      "status": "published",
-      "url": "https://arxiv.org/abs/2406.05002",
-      "featured": true,
-      "tags": [
-        "brain activity",
-        "EEG",
-        "Infrence",
-        "DCM"
-      ]
-    },
-    {
-      "title": "A Cross Attention Approach to Diagnostic Explainability Using Clinical Practice Guidelines for Depression",
-      "authors": "Dalal, Tilwani et al.",
-      "venue": "IEEE Journal of Biomedical and Health Informatics",
-      "year": 2024,
-      "status": "published",
-      "url": "http://pubmed.ncbi.nlm.nih.gov/39418143/",
-      "featured": true,
-      "tags": [
-        "healthcare",
-        "explainability"
-      ]
-    },
-    {
-      "title": "Neurosymbolic AI Approach to Attribution in Large Language Models",
-      "authors": "Tilwani, Venkataramanan, Sheth",
-      "venue": "IEEE Intelligent Systems",
-      "year": 2024,
-      "status": "published",
-      "url": "https://arxiv.org/abs/2410.03726",
-      "featured": true,
-      "tags": [
-        "Neurosymbolic AI",
-        "LLM attribution"
-      ]
-    },
-    {
-      "title": "REASONS: A benchmark for Retrieval and Automated citationS Of scieNtific Sentences using Public and Proprietary LLMs",
-      "authors": "Tilwani et al.",
-      "venue": "Under review (KDD 2026)",
-      "year": 2024,
-      "status": "under review",
-      "url": "https://arxiv.org/abs/2405.02228v1",
-      "featured": true,
-      "tags": [
-        "LLM evaluation",
-        "citation grounding"
-      ]
-    },
-    {
-      "title": "Can LLMs Obfuscate Code? A Systematic Analysis of Large Language Models into Assembly Code Obfuscation",
-      "authors": "Mohseni, S., Mohammadi, S., Tilwani, D., Saxena, Y., Ndawula, G. K., Vema, S., Raff, E., Gaur, M.",
-      "venue": "AAAI 2025 Main Conference",
-      "year": 2025,
-      "status": "published",
-      "url": "https://arxiv.org/abs/2412.16135",
-      "featured": false,
-      "tags": [
-        "LLM evaluation",
-        "code obfuscation"
-      ]
-    },
-    {
-      "title": "ECG Recordings as Predictors of Very Early Autism Likelihood: A Machine Learning Approach",
-      "authors": "Tilwani et al.",
-      "venue": "Bioengineering",
-      "year": 2023,
-      "status": "published",
-      "url": "https://www.mdpi.com/2306-5354/10/7/827",
-      "featured": true,
-      "tags": [
-        "signal processing",
-        "ECG",
-        "healthcare",
-        "interpretability"
-      ]
-    },
     {
       "title": "Neurosymbolic AI for Legal AI-TRISM: Trustworthy, Reliable, Interpretable, Safe Models",
       "authors": "Tilwani, D., Saxena, Y., Padia, A., Parthasarathy, S., Gaur, M.",
@@ -306,6 +111,36 @@ window.PORTFOLIO_DATA = {
       ]
     },
     {
+      "title": "Neurosymbolic AI for Legal AI‐TRISM: Trustworthy, Reliable, Interpretable, Safe Models",
+      "authors": "D Tilwani, Y Saxena, A Padia, S Parthasarathy, M Gaur",
+      "venue": "Neurosymbolic AI: Foundations and Applications, 429-454 , 2026",
+      "year": 2026,
+      "status": "published",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:UebtZRa9Y70C",
+      "featured": false,
+      "tags": []
+    },
+    {
+      "title": "Benchmarking machine learning models in lesion-symptom mapping for predicting language outcomes in stroke survivors",
+      "authors": "D Tilwani, C O'Reilly, N Riccardi, VL Shalin, DB den Ouden, J Fridriksson, ...",
+      "venue": "Frontiers in Neuroimaging 4, 1573816 , 2025",
+      "year": 2025,
+      "status": "published",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:UeHWp8X0CEIC",
+      "featured": false,
+      "tags": []
+    },
+    {
+      "title": "Can llms obfuscate code? a systematic analysis of large language models into assembly code obfuscation",
+      "authors": "S Mohseni, S Mohammadi, D Tilwani, Y Saxena, GK Ndawula, S Vema, ...",
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence 39 (23), 24893 … , 2025",
+      "year": 2025,
+      "status": "published",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:W7OEmFMy1HYC",
+      "featured": false,
+      "tags": []
+    },
+    {
       "title": "Neurosymbolic AI for EGI: Explainable, Grounded, and Instructable Generations",
       "authors": "Gaur, Tilwani, Raff, Azimi, Chadha",
       "venue": "AAAI 2025 Tutorial",
@@ -317,6 +152,36 @@ window.PORTFOLIO_DATA = {
         "tutorial",
         "Neurosymbolic AI"
       ]
+    },
+    {
+      "title": "A cross attention approach to diagnostic explainability using clinical practice guidelines for depression",
+      "authors": "S Dalal, D Tilwani, M Gaur, S Jain, VL Shalin, AP Sheth",
+      "venue": "IEEE Journal of Biomedical and Health Informatics 29 (2), 1333-1342 , 2024",
+      "year": 2024,
+      "status": "published",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:9yKSN-GCB0IC",
+      "featured": false,
+      "tags": []
+    },
+    {
+      "title": "Attribution in scientific literature: New benchmark and methods",
+      "authors": "Y Saxena, D Tilwani, A Mohammadi, E Raff, A Sheth, S Parthasarathy, ...",
+      "venue": "arXiv preprint arXiv:2405.02228 , 2024",
+      "year": 2024,
+      "status": "published",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:WF5omc3nYNoC",
+      "featured": false,
+      "tags": []
+    },
+    {
+      "title": "Deep Jansen-Rit Parameter Inference for Model-Driven Analysis of Brain Activity",
+      "authors": "D Tilwani, C O'Reilly",
+      "venue": "arXiv preprint arXiv:2406.05002 , 2024",
+      "year": 2024,
+      "status": "published",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:eQOLeE2rZwMC",
+      "featured": false,
+      "tags": []
     },
     {
       "title": "Evaluating Large Language Models as Substitutes for Human Affective Ratings in Naturalistic Paradigms",
@@ -333,87 +198,65 @@ window.PORTFOLIO_DATA = {
       ]
     },
     {
-      "title": "Model-Driven Analysis of ECG Using Reinforcement Learning",
-      "authors": "O'Reilly, Oruganti, Tilwani, Bradshaw",
-      "venue": "Bioengineering",
+      "title": "KiL 2024: 4th International Workshop on Knowledge-infused Learning (Towards Consistent, Reliable, Explainable, and Safe LLMs)",
+      "authors": "M Gaur, E Tsamoura, E Raff, N Vedula, S Parthasarathy",
+      "venue": "Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and … , 2024",
+      "year": 2024,
+      "status": "published",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:0EnyYjriUFMC",
+      "featured": false,
+      "tags": []
+    },
+    {
+      "title": "Neurosymbolic ai approach to attribution in large language models",
+      "authors": "D Tilwani, R Venkataramanan, AP Sheth",
+      "venue": "IEEE Intelligent Systems 39 (6), 10-17 , 2024",
+      "year": 2024,
+      "status": "published",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:Tyk-4Ss8FVUC",
+      "featured": false,
+      "tags": []
+    },
+    {
+      "title": "Reasons: A benchmark for retrieval and automated citations of scientific sentences using public and proprietary llms",
+      "authors": "D Tilwani, Y Saxena, A Mohammadi, E Raff, A Sheth, S Parthasarathy, ...",
+      "venue": "arXiv e-prints, arXiv: 2405.02228 , 2024",
+      "year": 2024,
+      "status": "published",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:roLk4NBRz8UC",
+      "featured": false,
+      "tags": []
+    },
+    {
+      "title": "ECG recordings as predictors of very early autism likelihood: a machine learning approach",
+      "authors": "D Tilwani, J Bradshaw, A Sheth, C O’Reilly",
+      "venue": "Bioengineering 10 (7), 827 , 2023",
       "year": 2023,
       "status": "published",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/37370627/",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:d1gkVwhDpl0C",
       "featured": false,
-      "tags": [
-        "signal processing",
-        "ECG"
-      ]
+      "tags": []
     },
     {
-      "title": "A Comparative Study and Tool to Early Predict Diabetes Using Machine and Deep Learning Techniques",
-      "authors": "Porwal, Patel, Tilwani, Bansal",
-      "venue": "Emerging Trends in Data-Driven Computing and Communications",
+      "title": "Model-driven analysis of ECG using reinforcement learning",
+      "authors": "C O’Reilly, SDR Oruganti, D Tilwani, J Bradshaw",
+      "venue": "Bioengineering 10 (6), 696 , 2023",
+      "year": 2023,
+      "status": "published",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:u-x6o8ySG0sC",
+      "featured": false,
+      "tags": []
+    },
+    {
+      "title": "A Comparative Study and Tool to Early Predict Diabetes Using Various Machine and Deep Learning Based Techniques",
+      "authors": "S Porwal, CK Patel, D Tilwani, SK Bansal",
+      "venue": "Emerging Trends in Data Driven Computing and Communications: Proceedings of … , 2021",
       "year": 2021,
       "status": "published",
-      "url": "https://link.springer.com/chapter/10.1007/978-981-16-3915-9_29",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:u5HHmVD_uO8C",
       "featured": false,
-      "tags": [
-        "healthcare",
-        "machine learning"
-      ]
+      "tags": []
     }
   ],
-  "featured_publications": [
-    {
-      "title": "Benchmarking machine learning models in lesion-symptom mapping for predicting language outcomes in stroke survivors",
-      "authors": "Tilwani et al.",
-      "venue": "Frontiers in Neuroimaging",
-      "year": 2025,
-      "status": "published",
-      "url": "",
-      "featured": true,
-      "tags": [
-        "neuroimaging",
-        "brain dynamics",
-        "MRI"
-      ]
-    },
-    {
-      "title": "Deep Jansen-Rit Parameter Inference for Model-driven Analysis of Brain Activity",
-      "authors": "Tilwani, O'Reilly",
-      "venue": "Advances in Signal Processing and Artificial Intelligence",
-      "year": 2025,
-      "status": "published",
-      "url": "https://arxiv.org/abs/2406.05002",
-      "featured": true,
-      "tags": [
-        "brain activity",
-        "EEG",
-        "Infrence",
-        "DCM"
-      ]
-    },
-    {
-      "title": "A Cross Attention Approach to Diagnostic Explainability Using Clinical Practice Guidelines for Depression",
-      "authors": "Dalal, Tilwani et al.",
-      "venue": "IEEE Journal of Biomedical and Health Informatics",
-      "year": 2024,
-      "status": "published",
-      "url": "http://pubmed.ncbi.nlm.nih.gov/39418143/",
-      "featured": true,
-      "tags": [
-        "healthcare",
-        "explainability"
-      ]
-    },
-    {
-      "title": "Neurosymbolic AI Approach to Attribution in Large Language Models",
-      "authors": "Tilwani, Venkataramanan, Sheth",
-      "venue": "IEEE Intelligent Systems",
-      "year": 2024,
-      "status": "published",
-      "url": "https://arxiv.org/abs/2410.03726",
-      "featured": true,
-      "tags": [
-        "Neurosymbolic AI",
-        "LLM attribution"
-      ]
-    }
-  ]
+  "featured_publications": []
 };
