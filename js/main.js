@@ -464,35 +464,6 @@
           </article>
         </div>`).join('');
     }
-    const selected = qs('#selected-projects');
-    if (selected) {
-      selected.innerHTML = `
-        <div class="col-lg-6">
-          <article class="card-lite h-100 p-4">
-            <h5>REASONS benchmark</h5>
-            <p class="text-secondary mb-0">Benchmarking retrieval and citation grounding for scientific LLM outputs with attention to evidence quality and factual support.</p>
-          </article>
-        </div>
-        <div class="col-lg-6">
-          <article class="card-lite h-100 p-4">
-            <h5>Generative brain models</h5>
-            <p class="text-secondary mb-0">Working with Jansen-Rit and related neural mass models for inversion, effective connectivity, and statistical analysis of brain dynamics.</p>
-          </article>
-        </div>
-        <div class="col-lg-6">
-          <article class="card-lite h-100 p-4">
-            <h5>Healthcare AI and explainability</h5>
-            <p class="text-secondary mb-0">Applying machine learning and explainable AI methods to clinical and neurocognitive settings, including depression and autism-related studies.</p>
-          </article>
-        </div>
-        <div class="col-lg-6">
-          <article class="card-lite h-100 p-4">
-            <h5>AI systems in applied settings</h5>
-            <p class="text-secondary mb-0">Building multi-agent and LLM-based systems for decision support, attribution, search, and high-stakes evaluation.</p>
-          </article>
-        </div>`;
-    }
-
     const exp = qs('#research-experience-highlights');
     if (exp) {
       exp.innerHTML = (DATA.experience || []).slice(0, 3).map(item => `
