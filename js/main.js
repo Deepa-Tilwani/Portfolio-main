@@ -1,6 +1,8 @@
 (function() {
   const DATA = window.PORTFOLIO_DATA || {};
-  const cfg = DATA.config || {};
+  function cfg() {
+    return DATA.config || {};
+  }
 
   function qs(sel, root=document) { return root.querySelector(sel); }
   function qsa(sel, root=document) { return [...root.querySelectorAll(sel)]; }
@@ -74,6 +76,13 @@
   }
 
   async function hydrateDynamicData() {
+    try {
+      const config = await loadJson('assets/site-config.json');
+      DATA.config = { ...(DATA.config || {}), ...(config || {}) };
+    } catch (error) {
+      console.warn('Falling back to bundled config data.', error);
+    }
+
     try {
       const [scholarPubs, manualPubs, awards] = await Promise.all([
         loadJson('assets/scholar-publications.json'),
@@ -502,9 +511,10 @@
   }
 
   function renderContact() {
-    setText('#contact-email', cfg.email || '');
-    setText('#contact-phone', cfg.phone || '');
-    setText('#contact-location', cfg.location || '');
+    const config = cfg();
+    setText('#contact-email', config.email || '');
+    setText('#contact-phone', config.phone || '');
+    setText('#contact-location', config.location || '');
   }
 
   function bindExpandableLists() {
@@ -522,15 +532,16 @@
   }
 
   function renderGlobalBits() {
-    qsa('[data-site-name]').forEach(el => el.textContent = cfg.name || 'Research Portfolio');
-    qsa('[data-site-tagline]').forEach(el => el.textContent = cfg.tagline || 'Research portfolio');
-    const resume = cfg.resume_pdf || 'assets/Deepa_Tilwani_Resume.pdf';
+    const config = cfg();
+    qsa('[data-site-name]').forEach(el => el.textContent = config.name || 'Research Portfolio');
+    qsa('[data-site-tagline]').forEach(el => el.textContent = config.tagline || 'Research portfolio');
+    const resume = config.resume_pdf || 'assets/Deepa_Tilwani_Resume.pdf';
     qsa('[data-resume-link]').forEach(el => el.setAttribute('href', resume));
-    qsa('[data-scholar-link]').forEach(el => el.setAttribute('href', cfg.scholar_profile_url || '#'));
-    qsa('[data-linkedin-link]').forEach(el => el.setAttribute('href', cfg.linkedin_url || '#'));
-    qsa('[data-github-link]').forEach(el => el.setAttribute('href', cfg.github_url || '#'));
-    qsa('[data-email-link]').forEach(el => el.setAttribute('href', `mailto:${cfg.email || ''}`));
-    qsa('[data-profile-image]').forEach(el => el.setAttribute('src', cfg.profile_image || 'images/profile.png'));
+    qsa('[data-scholar-link]').forEach(el => el.setAttribute('href', config.scholar_profile_url || '#'));
+    qsa('[data-linkedin-link]').forEach(el => el.setAttribute('href', config.linkedin_url || '#'));
+    qsa('[data-github-link]').forEach(el => el.setAttribute('href', config.github_url || '#'));
+    qsa('[data-email-link]').forEach(el => el.setAttribute('href', `mailto:${config.email || ''}`));
+    qsa('[data-profile-image]').forEach(el => el.setAttribute('src', config.profile_image || 'images/profile.png'));
   }
 
   document.addEventListener('DOMContentLoaded', async () => {
