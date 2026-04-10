@@ -48,14 +48,89 @@
 
   function fmtYear(y) { return y ? String(y) : ''; }
 
-  function dedupePublications(items) {
-    const seen = new Set();
-    return (items || []).filter(pub => {
-      const key = String(pub?.title || '').trim().toLowerCase();
-      if (!key || seen.has(key)) return false;
-      seen.add(key);
-      return true;
+  function normalizeTitle(value) {
+    return String(value || '')
+      .normalize('NFKD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, ' ')
+      .trim();
+  }
+
+  function inferPublicationTags(pub) {
+    const haystack = [
+      pub?.title || '',
+      pub?.venue || '',
+      pub?.authors || ''
+    ].join(' ').toLowerCase();
+
+    if (haystack.includes('jansen-rit') || haystack.includes('brain activity')) {
+      return ['brain activity', 'EEG', 'Infrence', 'DCM'];
+    }
+    if (haystack.includes('affective') || haystack.includes('naturalistic paradigms')) {
+      return ['brain activity', 'EEG', 'affective computing'];
+    }
+    if (haystack.includes('lesion-symptom') || haystack.includes('stroke survivors') || haystack.includes('neuroimaging')) {
+      return ['neuroimaging', 'brain dynamics', 'MRI'];
+    }
+    if (haystack.includes('ecg')) {
+      const tags = ['signal processing', 'ECG'];
+      if (haystack.includes('autism')) tags.push('healthcare');
+      return tags;
+    }
+    if (haystack.includes('diabetes') || haystack.includes('depression') || haystack.includes('health') || haystack.includes('biomedical')) {
+      if (haystack.includes('explainability')) return ['healthcare', 'explainability'];
+      return ['healthcare', 'machine learning'];
+    }
+    if (haystack.includes('neurosymbolic')) {
+      if (haystack.includes('attribution')) return ['neurosymbolic AI', 'LLM attribution'];
+      if (haystack.includes('legal')) return ['Neurosymbolic AI', 'Legal AI'];
+      return ['Neurosymbolic AI'];
+    }
+    if (haystack.includes('attribution in scientific literature') || haystack.includes('reasons') || haystack.includes('citation')) {
+      return ['LLM evaluation', 'scientific attribution'];
+    }
+    if (haystack.includes('obfuscat')) {
+      return ['LLM evaluation', 'code obfuscation'];
+    }
+    if (haystack.includes('kil 2024') || haystack.includes('knowledge-infused learning')) {
+      return ['LLM evaluation', 'workshop'];
+    }
+    return [];
+  }
+
+  function mergePublications(items) {
+    const merged = new Map();
+    (items || []).forEach(pub => {
+      const key = normalizeTitle(pub?.title);
+      if (!key) return;
+      const tags = Array.isArray(pub?.tags) && pub.tags.length ? pub.tags : inferPublicationTags(pub);
+      const current = merged.get(key);
+      if (!current) {
+        merged.set(key, { ...pub, tags });
+        return;
+      }
+
+      const currentTags = Array.isArray(current.tags) ? current.tags : [];
+      const nextTags = Array.isArray(tags) ? tags : [];
+      const mergedTags = [...new Set([...currentTags, ...nextTags])];
+      const currentFeatured = Boolean(current.featured);
+      const nextFeatured = Boolean(pub?.featured);
+      const preferred = currentTags.length >= nextTags.length ? current : pub;
+
+      merged.set(key, {
+        ...preferred,
+        title: preferred.title || current.title || pub.title,
+        authors: preferred.authors || current.authors || pub.authors,
+        venue: preferred.venue || current.venue || pub.venue,
+        year: preferred.year || current.year || pub.year,
+        status: preferred.status || current.status || pub.status,
+        url: preferred.url || current.url || pub.url,
+        featured: currentFeatured || nextFeatured,
+        tags: mergedTags
+      });
     });
+    return [...merged.values()];
   }
 
   function sortFeatured(items) {
@@ -90,7 +165,7 @@
         loadJson('assets/awards.json')
       ]);
 
-      const combinedPublications = dedupePublications([
+      const combinedPublications = mergePublications([
         ...(scholarPubs || []),
         ...(manualPubs || [])
       ]).sort((a, b) => {
@@ -153,7 +228,7 @@
   }
 
   function publicationTopic(pub) {
-    const tags = Array.isArray(pub.tags) ? pub.tags.filter(Boolean) : [];
+    const tags = Array.isArray(pub.tags) && pub.tags.length ? pub.tags.filter(Boolean) : inferPublicationTags(pub);
     if (!tags.length) return 'Other';
     const nonGeneric = tags.find(tag => !['book chapter', 'tutorial'].includes(String(tag).toLowerCase()));
     return nonGeneric || tags[0];
@@ -191,7 +266,7 @@
       ? `<a href="${esc(pub.url)}" target="_blank" rel="noopener">${esc(pub.title)}</a>`
       : esc(pub.title);
     const venueBits = [pub.venue || '', fmtYear(pub.year)].filter(Boolean);
-    const tags = (pub.tags || [])
+    const tags = ((pub.tags && pub.tags.length ? pub.tags : inferPublicationTags(pub)) || [])
       .filter(tag => String(tag) !== publicationTopic(pub))
       .map(tag => `<span class="publication-tag">${esc(tag)}</span>`)
       .join('');
