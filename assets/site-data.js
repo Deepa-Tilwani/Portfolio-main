@@ -11,12 +11,91 @@ window.PORTFOLIO_DATA = {
     "location": "Columbia, SC",
     "profile_image": "images/profile.png"
   },
-  "education": [],
-  "experience": [],
-  "teaching": [],
-  "service": [],
-  "mentoring": [],
-  "research_areas": [],
+  "education": [
+    {
+      "period": "2022–Present",
+      "title": "Ph.D. in Computer Science and Engineering",
+      "org": "University of South Carolina, Columbia, SC, USA",
+      "detail": "Focus on computational neuroscience, generative brain models, machine learning, deep learning, statistical analysis, and neurosymbolic AI."
+    },
+    {
+      "period": "2019–2022",
+      "title": "M.Tech in Computer Science and Engineering",
+      "org": "The LNM Institute of Information Technology, Jaipur, Rajasthan, India",
+      "detail": "Thesis: Predicting Familial Likelihood of Autism Spectrum Disorder in Infancy Using ECG."
+    }
+  ],
+  "experience": [
+    {
+      "period": "2022–Present",
+      "title": "Graduate Research Assistant",
+      "org": "Artificial Intelligence Institute, University of South Carolina",
+      "bullets": [
+        "Lead research projects focused on AI, machine learning, large language models, attribution, and search.",
+        "Developed the REASONS benchmark for retrieval and automated citation evaluation.",
+        "Collaborated with multidisciplinary teams on computational neuroscience, neuroimaging, and healthcare AI."
+      ]
+    },
+    {
+      "period": "June 2025–August 2025",
+      "title": "AI Research and Development Intern",
+      "org": "Neural Nest, LLC (Remote)",
+      "bullets": [
+        "Contributed to ARTHEMIS, an AI-driven virtual courtroom platform for arbitration and mediation.",
+        "Developed multi-agent and LLM-based simulation models to improve tribunal dynamics and decision support.",
+        "Supported secure digital courtroom workflows that reduced resolution time significantly."
+      ]
+    },
+    {
+      "period": "2021–2022",
+      "title": "Visiting Research Scholar",
+      "org": "Artificial Intelligence Institute, University of South Carolina",
+      "bullets": [
+        "Worked with a multidisciplinary neuroscience team on EEG and MRI analysis.",
+        "Contributed AI expertise to bridge computational methods and neurocognitive studies."
+      ]
+    },
+    {
+      "period": "2020–2021",
+      "title": "Remote Research Intern",
+      "org": "Artificial Intelligence Institute, University of South Carolina",
+      "bullets": [
+        "Collaborated on experiments connecting ECG signals with machine learning and deep learning methods.",
+        "Assisted in designing studies for very early autism likelihood prediction."
+      ]
+    }
+  ],
+  "teaching": [
+    "Teaching Assistant, SCINBRE Machine Learning in Python Workshop, University of South Carolina (2024).",
+    "Instructor, Introduction to Machine Learning, AIISC High School Summer Camp (2024).",
+    "Instructor, Introduction to Python, AIISC High School Summer Camp (2023).",
+    "Teaching Assistant (2019–2021), The LNM Institute of Information Technology: Computer Networks, Data Structures, DBMS, and Advanced Programming Labs."
+  ],
+  "service": [
+    "Web and Publicity Chair, KG-STAR Workshop, CIKM 2024.",
+    "Coordinator, AIISC Retreat, 2023.",
+    "Session Moderator and Publicity Chair, ACM KDD Workshop on Knowledge-infused Learning, 2023.",
+    "Student Member, AAAI (2022–Present)."
+  ],
+  "mentoring": [
+    "Yash Saxena — project on REASON: Reference and Assertions for Consistent Evaluation of Factual/Non-Factual Sentences.",
+    "Nethra Gunti — project on phase shift analysis in Autism Spectrum Disorder.",
+    "Sai Durga Rithvik Oruganti — project on phase shift analysis in Autism Spectrum Disorder."
+  ],
+  "research_areas": [
+    {
+      "title": "Computational Neuroscience",
+      "desc": "Generative models of brain activity for inversion, effective connectivity, and statistical analysis in computational neuroscience."
+    },
+    {
+      "title": "AI, Machine Learning, and Deep Learning",
+      "desc": "Machine learning and deep learning methods for brain signals, healthcare applications, and data-driven modeling."
+    },
+    {
+      "title": "LLMs and Trustworthy AI",
+      "desc": "Large language models, attribution, citation grounding, clinical explainability, and evaluation methods for reliable AI in high-stakes settings."
+    }
+  ],
   "talks": [
     {
       "title": "Book Review: Cognitive Neuroscience by Richard Passingham",
