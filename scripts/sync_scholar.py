@@ -29,6 +29,8 @@ SITE_DATA_PATH = ASSETS / "site-data.js"
 MANUAL_PATH = ASSETS / "manual-publications.json"
 AWARDS_PATH = ASSETS / "awards.json"
 TALKS_PATH = ASSETS / "talks.json"
+NEWS_PATH = ASSETS / "news.json"
+BLOGS_PATH = ASSETS / "blogs.json"
 
 
 @dataclass
@@ -171,6 +173,21 @@ def load_json(path: Path, default):
         return default
 
 
+def load_site_data(path: Path) -> dict:
+    if not path.exists():
+        return {}
+    try:
+        raw = path.read_text(encoding="utf-8").strip()
+        prefix = "window.PORTFOLIO_DATA = "
+        if raw.startswith(prefix):
+            raw = raw[len(prefix):]
+        if raw.endswith(";"):
+            raw = raw[:-1]
+        return json.loads(raw)
+    except Exception:
+        return {}
+
+
 def rebuild_site_data():
     config = load_json(CONFIG_PATH, {})
     scholar_pubs = load_json(OUTPUT_PATH, [])
@@ -178,6 +195,10 @@ def rebuild_site_data():
     manual_pubs = load_json(MANUAL_PATH, [])
     awards = load_json(AWARDS_PATH, [])
     talks = load_json(TALKS_PATH, [])
+    news = load_json(NEWS_PATH, [])
+    blogs = load_json(BLOGS_PATH, [])
+    existing_site_data = load_site_data(SITE_DATA_PATH)
+    existing_config = existing_site_data.get('config', {})
 
     combined = []
     seen = set()
@@ -200,18 +221,21 @@ def rebuild_site_data():
             'resume_pdf': config.get('resume_pdf', 'assets/Deepa_Tilwani_Resume.pdf'),
             'scholar_profile_url': config.get('scholar_profile_url', ''),
             'linkedin_url': config.get('linkedin_url', ''),
-            'email': config.get('email', ''),
-            'phone': config.get('phone', ''),
-            'location': config.get('location', ''),
-            'profile_image': config.get('profile_image', 'images/profile.png'),
+            'github_url': config.get('github_url', existing_config.get('github_url', '')),
+            'email': config.get('email', existing_config.get('email', '')),
+            'phone': config.get('phone', existing_config.get('phone', '')),
+            'location': config.get('location', existing_config.get('location', '')),
+            'profile_image': config.get('profile_image', existing_config.get('profile_image', 'images/profile.png')),
         },
-        'education': config.get('education', []),
-        'experience': config.get('experience', []),
-        'teaching': config.get('teaching', []),
-        'service': config.get('service', []),
-        'mentoring': config.get('mentoring', []),
-        'research_areas': config.get('research_areas', []),
+        'education': config.get('education', existing_site_data.get('education', [])),
+        'experience': config.get('experience', existing_site_data.get('experience', [])),
+        'teaching': config.get('teaching', existing_site_data.get('teaching', [])),
+        'service': config.get('service', existing_site_data.get('service', [])),
+        'mentoring': config.get('mentoring', existing_site_data.get('mentoring', [])),
+        'research_areas': config.get('research_areas', existing_site_data.get('research_areas', [])),
         'talks': talks,
+        'news': news or existing_site_data.get('news', []),
+        'blogs': blogs or existing_site_data.get('blogs', []),
         'awards': awards,
         'scholar_metrics': scholar_metrics,
         'publications': combined,
