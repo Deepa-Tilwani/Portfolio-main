@@ -6,6 +6,7 @@ window.PORTFOLIO_DATA = {
     "resume_pdf": "assets/Deepa_Tilwani_Resume.pdf",
     "scholar_profile_url": "https://scholar.google.com/citations?user=jpS1zA4AAAAJ&hl=en",
     "linkedin_url": "https://www.linkedin.com/in/deepa-tilwani-b758551a0/",
+    "github_url": "https://github.com/Deepa-Tilwani",
     "email": "dtilwani@mailbox.sc.edu",
     "phone": "+1 (803) 477-4526",
     "location": "Columbia, SC",
@@ -112,6 +113,25 @@ window.PORTFOLIO_DATA = {
       "summary": "Review of The Spike: An Epic Journey Through The Brain in 2.1 Seconds by Mark Humphries, presented by Deepa Tilwani."
     }
   ],
+  "news": [
+    {
+      "title": "Deepa Tilwani: Pioneering AI to transform autism diagnosis",
+      "source": "Molinaroli College of Engineering and Computing, University of South Carolina",
+      "date": "2024-06-20",
+      "url": "https://sc.edu/study/colleges_schools/engineering_and_computing/news_events/news/2024/student_feature_deepa_tilwani.php",
+      "summary": "Feature story highlighting Deepa Tilwani's research on AI, neuroscience, and early autism diagnosis."
+    }
+  ],
+  "blogs": [
+    {
+      "title": "Incredible experience at AAAI2025!",
+      "date": "2025-03-20",
+      "url": "https://www.linkedin.com/posts/deepa-tilwani-b758551a0_aaai2025-ai-machinelearning-activity-7308882723559858176-M3SH/",
+      "summary": "Thrilled to have delivered a tutorial and co-authored a paper accepted to the AAAI 2025 main conference with Seyedreza, Ali Mohammadi, and collaborators. A highlight of the event was meeting Andrew Ng and connecting with researchers across AI and machine learning.",
+      "source": "LinkedIn",
+      "cta_label": "Open Post"
+    }
+  ],
   "awards": [
     {
       "year": 2025,
@@ -170,7 +190,7 @@ window.PORTFOLIO_DATA = {
     }
   ],
   "scholar_metrics": {
-    "citations": 104,
+    "citations": 105,
     "h_index": 6,
     "i10_index": 6
   },
