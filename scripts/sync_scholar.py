@@ -132,6 +132,9 @@ def parse_profile(profile_url: str) -> tuple[List[Publication], dict]:
     seen = set()
     profile_soup = fetch_soup(session, with_query(profile_url, cstart="0", pagesize="100"))
     metrics = parse_metrics(profile_soup)
+    first_rows = profile_soup.select("tr.gsc_a_tr")
+    if not first_rows:
+        raise RuntimeError("Scholar returned no publication rows; request may have been blocked.")
 
     # Scholar paginates by 100 items.
     for start in range(0, 2000, 100):
@@ -252,8 +255,9 @@ def main() -> int:
     try:
         publications, metrics = parse_profile(profile_url)
     except Exception as exc:
-        print(f"Scholar sync failed: {exc}", file=sys.stderr)
-        return 1
+        print(f"Scholar sync skipped: {exc}", file=sys.stderr)
+        print("Keeping existing Scholar data and site-data.js unchanged.")
+        return 0
 
     OUTPUT_PATH.write_text(json.dumps(publications, indent=2, ensure_ascii=False), encoding="utf-8")
     METRICS_PATH.write_text(json.dumps(metrics, indent=2, ensure_ascii=False), encoding="utf-8")
