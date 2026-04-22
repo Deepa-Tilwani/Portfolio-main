@@ -190,7 +190,7 @@ window.PORTFOLIO_DATA = {
     }
   ],
   "scholar_metrics": {
-    "citations": 105,
+    "citations": 106,
     "h_index": 6,
     "i10_index": 6
   },
@@ -295,16 +295,6 @@ window.PORTFOLIO_DATA = {
         "EEG",
         "affective computing"
       ]
-    },
-    {
-      "title": "KiL 2024: 4th International Workshop on Knowledge-infused Learning (Towards Consistent, Reliable, Explainable, and Safe LLMs)",
-      "authors": "M Gaur, E Tsamoura, E Raff, N Vedula, S Parthasarathy",
-      "venue": "Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and … , 2024",
-      "year": 2024,
-      "status": "published",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:0EnyYjriUFMC",
-      "featured": false,
-      "tags": []
     },
     {
       "title": "Neurosymbolic ai approach to attribution in large language models",
