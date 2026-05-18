@@ -40,22 +40,22 @@
     "tags": []
   },
   {
-    "title": "ECG recordings as predictors of very early autism likelihood: a machine learning approach",
-    "authors": "D Tilwani, J Bradshaw, A Sheth, C O’Reilly",
-    "venue": "Bioengineering 10 (7), 827 , 2023",
-    "year": 2023,
-    "status": "published",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:d1gkVwhDpl0C",
-    "featured": false,
-    "tags": []
-  },
-  {
     "title": "Model-driven analysis of ECG using reinforcement learning",
     "authors": "C O’Reilly, SDR Oruganti, D Tilwani, J Bradshaw",
     "venue": "Bioengineering 10 (6), 696 , 2023",
     "year": 2023,
     "status": "published",
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:u-x6o8ySG0sC",
+    "featured": false,
+    "tags": []
+  },
+  {
+    "title": "ECG recordings as predictors of very early autism likelihood: a machine learning approach",
+    "authors": "D Tilwani, J Bradshaw, A Sheth, C O’Reilly",
+    "venue": "Bioengineering 10 (7), 827 , 2023",
+    "year": 2023,
+    "status": "published",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:d1gkVwhDpl0C",
     "featured": false,
     "tags": []
   },
