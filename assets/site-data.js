@@ -263,16 +263,6 @@ window.PORTFOLIO_DATA = {
       "tags": []
     },
     {
-      "title": "Attribution in scientific literature: New benchmark and methods",
-      "authors": "Y Saxena, D Tilwani, A Mohammadi, E Raff, A Sheth, S Parthasarathy, ...",
-      "venue": "arXiv preprint arXiv:2405.02228 , 2024",
-      "year": 2024,
-      "status": "published",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:WF5omc3nYNoC",
-      "featured": false,
-      "tags": []
-    },
-    {
       "title": "Deep Jansen-Rit Parameter Inference for Model-Driven Analysis of Brain Activity",
       "authors": "D Tilwani, C O'Reilly",
       "venue": "arXiv preprint arXiv:2406.05002 , 2024",
