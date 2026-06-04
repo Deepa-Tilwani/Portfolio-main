@@ -190,11 +190,21 @@ window.PORTFOLIO_DATA = {
     }
   ],
   "scholar_metrics": {
-    "citations": 115,
+    "citations": 118,
     "h_index": 6,
     "i10_index": 6
   },
   "publications": [
+    {
+      "title": "Evaluating Large Language Models as Substitutes for Human Affective Ratings in Naturalistic Paradigms",
+      "authors": "X Yang, D Tilwani, C O'Reilly, SV Shinkareva",
+      "venue": "IEEE Transactions on Affective Computing , 2026",
+      "year": 2026,
+      "status": "published",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:5nxA0vEk-isC",
+      "featured": false,
+      "tags": []
+    },
     {
       "title": "Neurosymbolic AI for Legal AI-TRISM: Trustworthy, Reliable, Interpretable, Safe Models",
       "authors": "Tilwani, D., Saxena, Y., Padia, A., Parthasarathy, S., Gaur, M.",
@@ -271,20 +281,6 @@ window.PORTFOLIO_DATA = {
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:eQOLeE2rZwMC",
       "featured": false,
       "tags": []
-    },
-    {
-      "title": "Evaluating Large Language Models as Substitutes for Human Affective Ratings in Naturalistic Paradigms",
-      "authors": "Yang, X., Tilwani, D., O'Reilly, C., Shinkareva, S.",
-      "venue": "Under review in IEEE Transactions on Affective Computing",
-      "year": 2024,
-      "status": "under review",
-      "url": "",
-      "featured": false,
-      "tags": [
-        "brain activity",
-        "EEG",
-        "affective computing"
-      ]
     },
     {
       "title": "Neurosymbolic ai approach to attribution in large language models",
