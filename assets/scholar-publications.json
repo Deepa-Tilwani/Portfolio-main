@@ -80,22 +80,22 @@
     "tags": []
   },
   {
-    "title": "Evaluating Large Language Models as Substitutes for Human Affective Ratings in Naturalistic Paradigms",
-    "authors": "X Yang, D Tilwani, C O'Reilly, SV Shinkareva",
-    "venue": "IEEE Transactions on Affective Computing , 2026",
-    "year": 2026,
-    "status": "published",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:5nxA0vEk-isC",
-    "featured": false,
-    "tags": []
-  },
-  {
     "title": "Deep Jansen-Rit Parameter Inference for Model-Driven Analysis of Brain Activity",
     "authors": "D Tilwani, C O'Reilly",
     "venue": "arXiv preprint arXiv:2406.05002 , 2024",
     "year": 2024,
     "status": "published",
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:eQOLeE2rZwMC",
+    "featured": false,
+    "tags": []
+  },
+  {
+    "title": "Evaluating Large Language Models as Substitutes for Human Affective Ratings in Naturalistic Paradigms",
+    "authors": "X Yang, D Tilwani, C O'Reilly, SV Shinkareva",
+    "venue": "IEEE Transactions on Affective Computing , 2026",
+    "year": 2026,
+    "status": "published",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:5nxA0vEk-isC",
     "featured": false,
     "tags": []
   },
