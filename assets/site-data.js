@@ -190,7 +190,7 @@ window.PORTFOLIO_DATA = {
     }
   ],
   "scholar_metrics": {
-    "citations": 129,
+    "citations": 138,
     "h_index": 6,
     "i10_index": 6
   },
@@ -275,7 +275,7 @@ window.PORTFOLIO_DATA = {
     {
       "title": "Deep Jansen-Rit Parameter Inference for Model-Driven Analysis of Brain Activity",
       "authors": "D Tilwani, C O'Reilly",
-      "venue": "arXiv preprint arXiv:2406.05002 , 2024",
+      "venue": "Advances in Signal Processing and Artificial Intelligence, 92 , 2024",
       "year": 2024,
       "status": "published",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:eQOLeE2rZwMC",

@@ -1,21 +1,21 @@
 [
   {
-    "title": "A cross attention approach to diagnostic explainability using clinical practice guidelines for depression",
-    "authors": "S Dalal, D Tilwani, M Gaur, S Jain, VL Shalin, AP Sheth",
-    "venue": "IEEE Journal of Biomedical and Health Informatics 29 (2), 1333-1342 , 2024",
-    "year": 2024,
-    "status": "published",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:9yKSN-GCB0IC",
-    "featured": false,
-    "tags": []
-  },
-  {
     "title": "Can llms obfuscate code? a systematic analysis of large language models into assembly code obfuscation",
     "authors": "S Mohseni, S Mohammadi, D Tilwani, Y Saxena, GK Ndawula, S Vema, ...",
     "venue": "Proceedings of the AAAI Conference on Artificial Intelligence 39 (23), 24893 … , 2025",
     "year": 2025,
     "status": "published",
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:W7OEmFMy1HYC",
+    "featured": false,
+    "tags": []
+  },
+  {
+    "title": "A cross attention approach to diagnostic explainability using clinical practice guidelines for depression",
+    "authors": "S Dalal, D Tilwani, M Gaur, S Jain, VL Shalin, AP Sheth",
+    "venue": "IEEE Journal of Biomedical and Health Informatics 29 (2), 1333-1342 , 2024",
+    "year": 2024,
+    "status": "published",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:9yKSN-GCB0IC",
     "featured": false,
     "tags": []
   },
@@ -60,6 +60,16 @@
     "tags": []
   },
   {
+    "title": "Evaluating Large Language Models as Substitutes for Human Affective Ratings in Naturalistic Paradigms",
+    "authors": "X Yang, D Tilwani, C O'Reilly, SV Shinkareva",
+    "venue": "IEEE Transactions on Affective Computing , 2026",
+    "year": 2026,
+    "status": "published",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:5nxA0vEk-isC",
+    "featured": false,
+    "tags": []
+  },
+  {
     "title": "Neurosymbolic AI for Legal AI‐TRISM: Trustworthy, Reliable, Interpretable, Safe Models",
     "authors": "D Tilwani, Y Saxena, A Padia, S Parthasarathy, M Gaur",
     "venue": "Neurosymbolic AI: Foundations and Applications, 429-454 , 2026",
@@ -82,20 +92,10 @@
   {
     "title": "Deep Jansen-Rit Parameter Inference for Model-Driven Analysis of Brain Activity",
     "authors": "D Tilwani, C O'Reilly",
-    "venue": "arXiv preprint arXiv:2406.05002 , 2024",
+    "venue": "Advances in Signal Processing and Artificial Intelligence, 92 , 2024",
     "year": 2024,
     "status": "published",
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:eQOLeE2rZwMC",
-    "featured": false,
-    "tags": []
-  },
-  {
-    "title": "Evaluating Large Language Models as Substitutes for Human Affective Ratings in Naturalistic Paradigms",
-    "authors": "X Yang, D Tilwani, C O'Reilly, SV Shinkareva",
-    "venue": "IEEE Transactions on Affective Computing , 2026",
-    "year": 2026,
-    "status": "published",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:5nxA0vEk-isC",
     "featured": false,
     "tags": []
   },
