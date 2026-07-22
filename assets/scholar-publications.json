@@ -40,16 +40,6 @@
     "tags": []
   },
   {
-    "title": "ECG recordings as predictors of very early autism likelihood: a machine learning approach",
-    "authors": "D Tilwani, J Bradshaw, A Sheth, C O’Reilly",
-    "venue": "Bioengineering 10 (7), 827 , 2023",
-    "year": 2023,
-    "status": "published",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:d1gkVwhDpl0C",
-    "featured": false,
-    "tags": []
-  },
-  {
     "title": "Model-driven analysis of ECG using reinforcement learning",
     "authors": "C O’Reilly, SDR Oruganti, D Tilwani, J Bradshaw",
     "venue": "Bioengineering 10 (6), 696 , 2023",
@@ -60,12 +50,22 @@
     "tags": []
   },
   {
-    "title": "Attribution in scientific literature: New benchmark and methods",
-    "authors": "Y Saxena, D Tilwani, A Mohammadi, E Raff, A Sheth, S Parthasarathy, ...",
-    "venue": "arXiv preprint arXiv:2405.02228 , 2024",
-    "year": 2024,
+    "title": "ECG recordings as predictors of very early autism likelihood: a machine learning approach",
+    "authors": "D Tilwani, J Bradshaw, A Sheth, C O’Reilly",
+    "venue": "Bioengineering 10 (7), 827 , 2023",
+    "year": 2023,
     "status": "published",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:WF5omc3nYNoC",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:d1gkVwhDpl0C",
+    "featured": false,
+    "tags": []
+  },
+  {
+    "title": "Evaluating Large Language Models as Substitutes for Human Affective Ratings in Naturalistic Paradigms",
+    "authors": "X Yang, D Tilwani, C O'Reilly, SV Shinkareva",
+    "venue": "IEEE Transactions on Affective Computing , 2026",
+    "year": 2026,
+    "status": "published",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:5nxA0vEk-isC",
     "featured": false,
     "tags": []
   },
@@ -90,19 +90,9 @@
     "tags": []
   },
   {
-    "title": "KiL 2024: 4th International Workshop on Knowledge-infused Learning (Towards Consistent, Reliable, Explainable, and Safe LLMs)",
-    "authors": "M Gaur, E Tsamoura, E Raff, N Vedula, S Parthasarathy",
-    "venue": "Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and … , 2024",
-    "year": 2024,
-    "status": "published",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:0EnyYjriUFMC",
-    "featured": false,
-    "tags": []
-  },
-  {
     "title": "Deep Jansen-Rit Parameter Inference for Model-Driven Analysis of Brain Activity",
     "authors": "D Tilwani, C O'Reilly",
-    "venue": "arXiv preprint arXiv:2406.05002 , 2024",
+    "venue": "Advances in Signal Processing and Artificial Intelligence, 92 , 2024",
     "year": 2024,
     "status": "published",
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:eQOLeE2rZwMC",
