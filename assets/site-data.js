@@ -1,7 +1,7 @@
 window.PORTFOLIO_DATA = {
   "config": {
     "name": "Deepa Tilwani",
-    "tagline": "PhD researcher in neuroscience, AI, machine learning, deep learning, and trustworthy LLMs.",
+    "tagline": "PhD candidate researching computational neuroscience, statistical modeling, Bayesian methods, AI, and interdisciplinary applications.",
     "description": "Deepa Tilwani research website.",
     "resume_pdf": "assets/Deepa_Tilwani_Resume.pdf",
     "scholar_profile_url": "https://scholar.google.com/citations?user=jpS1zA4AAAAJ&hl=en",
@@ -17,7 +17,7 @@ window.PORTFOLIO_DATA = {
       "period": "2022–Present",
       "title": "Ph.D. in Computer Science and Engineering",
       "org": "University of South Carolina, Columbia, SC, USA",
-      "detail": "Focus on computational neuroscience, generative brain models, machine learning, deep learning, statistical analysis, and neurosymbolic AI."
+      "detail": "Focus on computational neuroscience, generative brain models, statistical analysis, Bayesian methods, machine learning, deep learning, and neurosymbolic AI."
     },
     {
       "period": "2019–2022",
@@ -86,15 +86,15 @@ window.PORTFOLIO_DATA = {
   "research_areas": [
     {
       "title": "Computational Neuroscience",
-      "desc": "Generative models of brain activity for inversion, effective connectivity, and statistical analysis in computational neuroscience."
+      "desc": "Generative and model-driven analysis of brain activity for inversion, effective connectivity, statistical analysis, and neurobiological interpretation."
     },
     {
-      "title": "AI, Machine Learning, and Deep Learning",
-      "desc": "Machine learning and deep learning methods for brain signals, healthcare applications, and data-driven modeling."
+      "title": "Statistical and Bayesian Modeling",
+      "desc": "Statistical analysis, Bayesian methods, uncertainty-aware modeling, and interpretable computational methods for neuroscience and healthcare data."
     },
     {
-      "title": "LLMs and Trustworthy AI",
-      "desc": "Large language models, attribution, citation grounding, clinical explainability, and evaluation methods for reliable AI in high-stakes settings."
+      "title": "Trustworthy AI and Collaborations",
+      "desc": "Interdisciplinary work across healthcare AI, neurosymbolic AI, legal AI, citation grounding, explainability, and reliable language-system evaluation."
     }
   ],
   "talks": [

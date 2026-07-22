@@ -65,7 +65,7 @@
     ].join(' ').toLowerCase();
 
     if (haystack.includes('jansen-rit') || haystack.includes('brain activity')) {
-      return ['brain activity', 'EEG', 'Infrence', 'DCM'];
+      return ['brain activity', 'EEG', 'Inference', 'DCM'];
     }
     if (haystack.includes('affective') || haystack.includes('naturalistic paradigms')) {
       return ['brain activity', 'EEG', 'affective computing'];
