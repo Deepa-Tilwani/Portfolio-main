@@ -100,12 +100,22 @@
     "tags": []
   },
   {
-    "title": "A Comparative Study and Tool to Early Predict Diabetes Using Various Machine and Deep Learning Based Techniques",
-    "authors": "S Porwal, CK Patel, D Tilwani, SK Bansal",
-    "venue": "Emerging Trends in Data Driven Computing and Communications: Proceedings of … , 2021",
-    "year": 2021,
+    "title": "A Segment-Level Adult Lifespan Valence–Arousal Dataset for Naturalistic Narrative Comprehension",
+    "authors": "X Yang, D Tilwani, A Murphy, A Rassolov, C O’Reilly, SV Shinkareva",
+    "venue": "IEEE Xplore , 2026",
+    "year": 2026,
     "status": "published",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:u5HHmVD_uO8C",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:3fE2CSJIrl8C",
+    "featured": false,
+    "tags": []
+  },
+  {
+    "title": "Hierarchical Modeling of Continuous Arousal in EEG Reveals Age and Sex Modulation in Naturalistic Listening",
+    "authors": "D Tilwani, X Yang, SV Shinkareva, C O’Reilly",
+    "venue": "IEEE Xplore , 2026",
+    "year": 2026,
+    "status": "published",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:MXK_kJrjxJIC",
     "featured": false,
     "tags": []
   }
