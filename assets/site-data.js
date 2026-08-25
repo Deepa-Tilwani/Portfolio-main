@@ -190,11 +190,21 @@ window.PORTFOLIO_DATA = {
     }
   ],
   "scholar_metrics": {
-    "citations": 139,
+    "citations": 147,
     "h_index": 6,
     "i10_index": 6
   },
   "publications": [
+    {
+      "title": "A Segment-Level Adult Lifespan Valence–Arousal Dataset for Naturalistic Narrative Comprehension",
+      "authors": "X Yang, D Tilwani, A Murphy, A Rassolov, C O’Reilly, SV Shinkareva",
+      "venue": "IEEE Xplore , 2026",
+      "year": 2026,
+      "status": "published",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:3fE2CSJIrl8C",
+      "featured": false,
+      "tags": []
+    },
     {
       "title": "Evaluating Large Language Models as Substitutes for Human Affective Ratings in Naturalistic Paradigms",
       "authors": "X Yang, D Tilwani, C O'Reilly, SV Shinkareva",
@@ -202,6 +212,16 @@ window.PORTFOLIO_DATA = {
       "year": 2026,
       "status": "published",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:5nxA0vEk-isC",
+      "featured": false,
+      "tags": []
+    },
+    {
+      "title": "Hierarchical Modeling of Continuous Arousal in EEG Reveals Age and Sex Modulation in Naturalistic Listening",
+      "authors": "D Tilwani, X Yang, SV Shinkareva, C O’Reilly",
+      "venue": "IEEE Xplore , 2026",
+      "year": 2026,
+      "status": "published",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:MXK_kJrjxJIC",
       "featured": false,
       "tags": []
     },
@@ -319,16 +339,6 @@ window.PORTFOLIO_DATA = {
       "year": 2023,
       "status": "published",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:u-x6o8ySG0sC",
-      "featured": false,
-      "tags": []
-    },
-    {
-      "title": "A Comparative Study and Tool to Early Predict Diabetes Using Various Machine and Deep Learning Based Techniques",
-      "authors": "S Porwal, CK Patel, D Tilwani, SK Bansal",
-      "venue": "Emerging Trends in Data Driven Computing and Communications: Proceedings of … , 2021",
-      "year": 2021,
-      "status": "published",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:u5HHmVD_uO8C",
       "featured": false,
       "tags": []
     }
