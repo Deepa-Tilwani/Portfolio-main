@@ -3,7 +3,7 @@ window.PORTFOLIO_DATA = {
     "name": "Deepa Tilwani",
     "tagline": "PhD candidate researching computational neuroscience, statistical modeling, Bayesian methods, AI, and interdisciplinary applications.",
     "description": "Deepa Tilwani research website.",
-    "resume_pdf": "assets/Deepa_Tilwani_Resume.pdf",
+    "resume_pdf": "https://github.com/Deepa-Tilwani/CV/raw/main/Resume_Deepa.pdf",
     "scholar_profile_url": "https://scholar.google.com/citations?user=jpS1zA4AAAAJ&hl=en",
     "linkedin_url": "https://www.linkedin.com/in/deepa-tilwani-b758551a0/",
     "github_url": "https://github.com/Deepa-Tilwani",
