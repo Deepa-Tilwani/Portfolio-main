@@ -190,7 +190,7 @@ window.PORTFOLIO_DATA = {
     }
   ],
   "scholar_metrics": {
-    "citations": 147,
+    "citations": 152,
     "h_index": 6,
     "i10_index": 6
   },
@@ -198,7 +198,7 @@ window.PORTFOLIO_DATA = {
     {
       "title": "A Segment-Level Adult Lifespan Valence–Arousal Dataset for Naturalistic Narrative Comprehension",
       "authors": "X Yang, D Tilwani, A Murphy, A Rassolov, C O’Reilly, SV Shinkareva",
-      "venue": "IEEE Xplore , 2026",
+      "venue": "14th International Conference on Affective Computing and Intelligent … , 2026",
       "year": 2026,
       "status": "published",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:3fE2CSJIrl8C",
@@ -218,7 +218,7 @@ window.PORTFOLIO_DATA = {
     {
       "title": "Hierarchical Modeling of Continuous Arousal in EEG Reveals Age and Sex Modulation in Naturalistic Listening",
       "authors": "D Tilwani, X Yang, SV Shinkareva, C O’Reilly",
-      "venue": "IEEE Xplore , 2026",
+      "venue": "14th International Conference on Affective Computing and Intelligent … , 2026",
       "year": 2026,
       "status": "published",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:MXK_kJrjxJIC",
@@ -315,7 +315,7 @@ window.PORTFOLIO_DATA = {
     {
       "title": "Reasons: A benchmark for retrieval and automated citations of scientific sentences using public and proprietary llms",
       "authors": "D Tilwani, Y Saxena, A Mohammadi, E Raff, A Sheth, S Parthasarathy, ...",
-      "venue": "arXiv e-prints, arXiv: 2405.02228 , 2024",
+      "venue": "DSAA 2026, arXiv: 2405.02228 , 2024",
       "year": 2024,
       "status": "published",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jpS1zA4AAAAJ&pagesize=100&citation_for_view=jpS1zA4AAAAJ:roLk4NBRz8UC",
