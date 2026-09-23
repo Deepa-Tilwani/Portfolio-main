@@ -190,7 +190,7 @@ window.PORTFOLIO_DATA = {
     }
   ],
   "scholar_metrics": {
-    "citations": 157,
+    "citations": 158,
     "h_index": 6,
     "i10_index": 6
   },
