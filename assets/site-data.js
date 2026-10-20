@@ -99,6 +99,13 @@ window.PORTFOLIO_DATA = {
   ],
   "talks": [
     {
+      "title": "Hierarchical modeling of continuous affect in EEG reveals age and sex modulation during naturalistic narrative listening",
+      "event": "ACII 2026",
+      "youtube": "",
+      "slides": "https://docs.google.com/presentation/d/1-3_A7OiEgZ9BIb6np1c7ki3n8ZB20mbK/edit?usp=sharing&ouid=100738087878736325085&rtpof=true&sd=true",
+      "summary": "Presented at ACII 2026. Nominated for the Best Paper Award, among the top three in the student category."
+    },
+    {
       "title": "Book Review: Cognitive Neuroscience by Richard Passingham",
       "event": "YouTube",
       "youtube": "https://www.youtube.com/watch?v=WXrEboijV3E",
@@ -133,6 +140,11 @@ window.PORTFOLIO_DATA = {
     }
   ],
   "awards": [
+    {
+      "year": 2026,
+      "title": "Best Paper Award Nomination — Top 3, Student Category",
+      "detail": "ACII 2026 — Hierarchical modeling of continuous affect in EEG reveals age and sex modulation during naturalistic narrative listening."
+    },
     {
       "year": 2025,
       "title": "University Travel Award",
